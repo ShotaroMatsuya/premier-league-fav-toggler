@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+//contextAPIに用いるstateはlow frequency なものが適している
 //init context object
 export const ProductsContext = React.createContext({
   products: [],
@@ -7,6 +8,7 @@ export const ProductsContext = React.createContext({
 });
 
 //export functional component
+// eslint-disable-next-line import/no-anonymous-default-export
 export default props => {
   const [productsList, setProductsList] = useState([
     {
