@@ -25,9 +25,9 @@ const ProductItem = React.memo(props => {
     <Card style={{ marginBottom: '1rem' }}>
       <div className="product-item">
         <h2 className={props.isFav ? 'is-fav' : ''}>{props.name}</h2>
-        <div class="info">
+        <div className="info">
           <img src={props.imageUrl} alt="player" />
-          <div class="detail">
+          <div className="detail">
             <p>国籍:{props.nation}</p>
             <p>年齢:{props.age}</p>
             <p>所属:{props.club}</p>

@@ -10,38 +10,38 @@ const FavoriteItem = props => {
         <h1>{props.name}</h1>
         <p>Latest Activity from Social</p>
         <p>top stats</p>
-        <div class="topStatList">
-          <div class="topStat">
-            <span class="stat">
+        <div className="topStatList">
+          <div className="topStat">
+            <span className="stat">
               Appearances{' '}
               <span
-                class="allStatContainer statappearances"
+                className="allStatContainer statappearances"
                 data-stat="appearances"
               >
                 33
               </span>
             </span>
           </div>
-          <div class="topStat">
-            <span class="stat">
+          <div className="topStat">
+            <span className="stat">
               Goals{' '}
-              <span class="allStatContainer statgoals" data-stat="goals">
+              <span className="allStatContainer statgoals" data-stat="goals">
                 10
               </span>
             </span>
           </div>
-          <div class="topStat">
-            <span class="stat">
+          <div className="topStat">
+            <span className="stat">
               Wins{' '}
-              <span class="allStatContainer statwins" data-stat="wins">
+              <span className="allStatContainer statwins" data-stat="wins">
                 16
               </span>
             </span>
           </div>
-          <div class="topStat">
-            <span class="stat">
+          <div className="topStat">
+            <span className="stat">
               Losses{' '}
-              <span class="allStatContainer statlosses" data-stat="losses">
+              <span className="allStatContainer statlosses" data-stat="losses">
                 11
               </span>
             </span>

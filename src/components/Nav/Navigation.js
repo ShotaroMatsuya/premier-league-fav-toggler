@@ -16,6 +16,12 @@ const Navigation = props => {
           <li>
             <NavLink to="/favorites">Your Favorites</NavLink>
           </li>
+          <li>
+            <NavLink to="/ranking">Ranking</NavLink>
+          </li>
+          <li>
+            <NavLink to="/schedule">Schedule</NavLink>
+          </li>
         </ul>
       </nav>
     </header>
