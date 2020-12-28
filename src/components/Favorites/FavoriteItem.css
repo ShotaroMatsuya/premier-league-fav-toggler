@@ -9,10 +9,11 @@
 .topStatList {
   clear: both;
   display: table;
-  margin: 0 auto 3rem;
+
   text-align: center;
   border-top: 1px solid #e8e8e8;
   border-bottom: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
   font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 400;
   border-radius: 0 0 3px 3px;
@@ -20,7 +21,8 @@
 }
 .topStatList .topStat {
   border-left: 1px solid #e8e8e8;
-  padding: 1rem 2rem;
+  padding: 1rem;
+  width: 25%;
   display: table-cell;
 }
 .topStatList .allStatContainer {

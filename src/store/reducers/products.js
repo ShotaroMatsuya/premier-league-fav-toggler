@@ -3,7 +3,7 @@ import { TOGGLE_FAV } from '../actions/products';
 const initialState = {
   products: [
     {
-      id: 'p1',
+      id: '909',
       name: 'Marcus Rashford',
       nation: 'England',
       age: '23 years old',
@@ -15,7 +15,7 @@ const initialState = {
       isFavorite: false,
     },
     {
-      id: 'p2',
+      id: '631',
       name: 'Philip Walter Foden',
       nation: 'England',
       age: '20 years old',
@@ -27,7 +27,7 @@ const initialState = {
       isFavorite: false,
     },
     {
-      id: 'p3',
+      id: '739',
       name: 'Sergio Reguilon Rodriguez',
       nation: 'Spain',
       age: '24 years old',
@@ -39,9 +39,9 @@ const initialState = {
       isFavorite: false,
     },
     {
-      id: 'p4',
+      id: '17',
       name: 'Christian Mate Pulisic',
-      nation: 'United States of America',
+      nation: 'USA',
       age: '22 years old',
       club: 'Chelsea FC',
       height_weight: '173/70',
@@ -51,7 +51,7 @@ const initialState = {
       isFavorite: false,
     },
     {
-      id: 'p5',
+      id: '1101',
       name: 'Takumi Minamino',
       nation: 'Japan',
       age: '25 years old',
@@ -63,7 +63,7 @@ const initialState = {
       isFavorite: false,
     },
     {
-      id: 'p6',
+      id: '1438',
       name: 'Bernd Leno',
       nation: 'Germany',
       age: '28 years old',

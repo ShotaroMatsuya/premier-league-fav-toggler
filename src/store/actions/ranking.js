@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { PL_DATA_TOKEN } from '../../axios.js';
 
 //defined action identifier
 export const START_FETCH = 'START_FETCH';
@@ -25,7 +26,7 @@ const failedFetch = payload => {
 
 export const initRanking = () => {
   return dispatch => {
-    let headers = { 'X-Auth-Token': 'd755ded3f55c41eea77c24a248d5e256' };
+    let headers = { 'X-Auth-Token': PL_DATA_TOKEN };
     dispatch(startFetch());
     axios
       .get(

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Modal.css';
-import Backdrop from '../Backdrop/Backdrop';
+import Backdrop from './Backdrop';
 
 const modal = props => {
   // shouldComponentUpdate(nextProps,nextState){//Modalがprops.showがtrueのとき,or modalの内容に変更があたとき

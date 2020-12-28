@@ -26,7 +26,9 @@ const Favorites = props => {
             key={prod.id}
             id={prod.id}
             name={prod.name}
-            age={prod.age}
+            imageUrl={prod.imageUrl}
+            position={prod.position}
+            stats={null}
           />
         ))}
       </ul>

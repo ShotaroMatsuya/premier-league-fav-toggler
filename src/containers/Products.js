@@ -28,7 +28,6 @@ const Products = props => {
           height_weight={prod.height_weight}
           position={prod.position}
           imageUrl={prod.imageUrl}
-          posUrl={prod.posUrl}
           isFav={prod.isFavorite}
         />
       ))}
