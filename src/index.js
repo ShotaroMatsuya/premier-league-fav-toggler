@@ -9,6 +9,7 @@ import './index.css';
 import App from './App';
 import productReducer from './store/reducers/products';
 import rankingReducer from './store/reducers/ranking';
+import scheduleReducer from './store/reducers/schedule';
 // import ProductsProvider from './context/products-context';
 // import configureProductsStore from './hooks-store/products-store';
 
@@ -20,6 +21,7 @@ const composeEnhancers =
 const rootReducer = combineReducers({
   player: productReducer,
   ranking: rankingReducer,
+  schedule: scheduleReducer,
 });
 
 const store = createStore(

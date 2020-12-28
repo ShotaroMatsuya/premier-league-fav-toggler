@@ -8,3 +8,27 @@
   margin: 4rem;
   text-align: center;
 }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1em;
+}
+table.ranking th,
+table.schedule th {
+  border: solid 1px #656565 !important;
+  line-height: 1em !important;
+  padding: 2px 2px;
+  background: #f5f5f5;
+}
+.ranking tbody,
+.schedule tbody {
+  font-weight: bold;
+  border: solid 1px #656565;
+  line-height: 1em;
+}
+.ranking td,
+.schedule td {
+  border: solid 1px #656565 !important;
+  line-height: 1em !important;
+  padding: 2px 2px;
+}

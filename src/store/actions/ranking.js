@@ -1,23 +1,22 @@
 import axios from 'axios';
 
+//defined action identifier
 export const START_FETCH = 'START_FETCH';
-
 export const SUCCESS_FETCH = 'SUCCESS_FETCH';
-
 export const FAILED_FETCH = 'FAILED_FETCH';
-
-export const startFetch = () => {
+//defined action creator
+const startFetch = () => {
   return {
     type: START_FETCH,
   };
 };
-export const successFetch = payload => {
+const successFetch = payload => {
   return {
     type: SUCCESS_FETCH,
     payload: payload,
   };
 };
-export const failedFetch = payload => {
+const failedFetch = payload => {
   return {
     type: FAILED_FETCH,
     payload: payload,
@@ -25,8 +24,8 @@ export const failedFetch = payload => {
 };
 
 export const initRanking = () => {
-  let headers = { 'X-Auth-Token': 'APIKEY' };
   return dispatch => {
+    let headers = { 'X-Auth-Token': 'd755ded3f55c41eea77c24a248d5e256' };
     dispatch(startFetch());
     axios
       .get(
@@ -34,12 +33,11 @@ export const initRanking = () => {
         { headers: headers }
       )
       .then(data_PL => {
-        dispatch(successFetch(data_PL.standings));
-        console.log(data_PL);
-        // dispatch(setRanking(data_PL.standings[0].table));
+        dispatch(successFetch(data_PL.data.standings[0].table));
+        console.log(data_PL.data.standings[0].table);
       })
       .catch(err => {
-        dispatch(FAILED_FETCH(err));
+        dispatch(failedFetch(err));
         console.log(err);
       });
   };
