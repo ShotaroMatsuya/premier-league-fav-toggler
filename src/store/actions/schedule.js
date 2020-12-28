@@ -17,8 +17,19 @@ const failedScFetch = payload => {
 export const setSchedule = () => {
   return dispatch => {
     let headers = { 'X-Auth-Token': 'd755ded3f55c41eea77c24a248d5e256' };
-    let dateFrom = '2020-12-28';
-    let dateTo = '2021-01-04';
+    const nowDate = new Date();
+    const y = nowDate.getFullYear();
+    const m = ('00' + (nowDate.getMonth() + 1)).slice(-2);
+    const d = ('00' + nowDate.getDate()).slice(-2);
+    let dateFrom = y + '-' + m + '-' + d;
+    const nextDate = new Date(nowDate.setDate(nowDate.getDate() + 7));
+    const ny = nextDate.getFullYear();
+    const nm = ('00' + (nextDate.getMonth() + 1)).slice(-2);
+    const nd = ('00' + nextDate.getDate()).slice(-2);
+    let dateTo = ny + '-' + nm + '-' + nd;
+    console.log(dateFrom, dateTo);
+    // let dateTo = '2021-01-01';
+
     dispatch(startScFetch());
 
     axios
