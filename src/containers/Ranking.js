@@ -37,8 +37,8 @@ const Ranking = props => {
     });
   }
   let rankingTable = rankingChart ? (
-    <Card style={{ margin: '3rem' }}>
-      <table className="ranking" style={{ margin: '10px auto' }}>
+    <Card>
+      <table className="ranking">
         <thead>
           <tr align="center">
             <th width="10%">順位</th>

@@ -67,8 +67,8 @@ const Schedule = props => {
     }
   }
   return (
-    <Card style={{ margin: '3rem' }}>
-      <table className="schedule" style={{ margin: '0 auto' }}>
+    <Card>
+      <table className="schedule">
         <thead>
           <tr align="center">
             <th width="40%">ホーム</th>

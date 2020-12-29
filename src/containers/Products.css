@@ -1,6 +1,12 @@
 main {
   padding: 3rem 0;
 }
+.ranking {
+  margin: 10px auto;
+}
+.schedule {
+  margin: 0 auto;
+}
 .products-list {
   list-style: none;
   margin: 3rem;
