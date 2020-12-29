@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import FavoriteItem from '../components/Favorites/FavoriteItem';
+import FavoriteItem from './Favorites/FavoriteItem';
 // import { ProductsContext } from '../context/products-context';
 // import { useStore } from '../hooks-store/store';
 

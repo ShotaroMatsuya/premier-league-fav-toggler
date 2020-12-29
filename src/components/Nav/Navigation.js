@@ -1,11 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Logo from './Logo';
+import DrawerToggle from './DrawerToggle';
 
 import './Navigation.css';
 
 const Navigation = props => {
   return (
     <header className="main-header">
+      <DrawerToggle clicked={props.drawerToggleClicked} />
+      <div style={{ height: '80%' }}>
+        <Logo />
+      </div>
       <nav>
         <ul>
           <li>

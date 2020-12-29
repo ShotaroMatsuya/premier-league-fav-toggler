@@ -2,11 +2,7 @@ import React from 'react';
 import './Modal.css';
 import Backdrop from './Backdrop';
 
-const modal = props => {
-  // shouldComponentUpdate(nextProps,nextState){//Modalがprops.showがtrueのとき,or modalの内容に変更があたとき
-  //     return nextProps.show !== this.props.show||nextProps.children !== this.props.children;
-  // }
-
+const Modal = props => {
   return (
     <React.Fragment>
       <Backdrop show={props.show} clicked={props.modalClosed} />
@@ -25,7 +21,7 @@ const modal = props => {
 
 export default React.memo(
   //shouldComponentUpdateと真逆のロジックをセットすれば良い
-  modal,
+  Modal,
   (prevProps, nextProps) =>
     nextProps.show === prevProps.show &&
     nextProps.children === prevProps.children

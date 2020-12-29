@@ -1,7 +1,13 @@
+main {
+  padding: 3rem 0;
+}
 .products-list {
   list-style: none;
   margin: 3rem;
   padding: 0;
+}
+.products-list img {
+  object-fit: cover;
 }
 
 .placeholder {
@@ -31,4 +37,11 @@ table.schedule th {
   border: solid 1px #656565 !important;
   line-height: 1em !important;
   padding: 2px 2px;
+}
+
+@media (max-width: 499px) {
+  .products-list {
+    list-style: none;
+    margin: 3rem 0.8rem;
+  }
 }

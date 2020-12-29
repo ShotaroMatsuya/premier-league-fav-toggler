@@ -1,0 +1,123 @@
+.favorite-item h2 {
+  font-size: 1.15rem;
+  margin: 0.25rem 0;
+}
+.player-info {
+  display: flex;
+  justify-content: space-around;
+}
+.player-image {
+  width: 25%;
+}
+.player-stats {
+  width: 50%;
+}
+.favorite-item p {
+  margin: 0.25rem 0;
+}
+.topStatList {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 400;
+  border-radius: 0 0 3px 3px;
+  position: relative;
+}
+.topStatList .topStat {
+  border-left: 1px solid #e8e8e8;
+  padding: 1rem;
+  width: 25%;
+  display: table-cell;
+}
+.topStatList .allStatContainer {
+  margin-top: 1rem;
+  font-size: 3rem;
+  display: block;
+}
+table.stats th {
+  border: solid 1px #656565 !important;
+  line-height: 1em !important;
+  background: #f5f5f5;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+table.stats tbody {
+  font-weight: bold;
+  line-height: 1em;
+  font-size: 1.2rem;
+  text-align: right;
+}
+table.stats td {
+  border: solid 1px #656565 !important;
+  line-height: 1em !important;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 850px) {
+  .topStatList .allStatContainer {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  .topStatList .stat {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .topStatList .topStat {
+    padding: 1.2rem;
+    width: 50%;
+  }
+  .topStatList .allStatContainer {
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+  .topStatList .stat {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 599px) {
+  table.stats {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  table.stats th,
+  table.stats td {
+    display: block;
+  }
+
+  .player-info {
+    display: block;
+  }
+  .player-image {
+    width: 100%;
+  }
+  .player-stats {
+    width: 100%;
+  }
+  .topStatList .topStat {
+    padding: 1rem;
+    width: 25%;
+  }
+}
+
+@media (max-width: 540px) {
+  .topStatList .topStat {
+    padding: 1.2rem;
+    width: 50%;
+  }
+  .topStatList .allStatContainer {
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+  .topStatList .stat {
+    font-size: 1.2rem;
+  }
+}

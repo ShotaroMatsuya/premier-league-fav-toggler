@@ -4,6 +4,15 @@
   justify-content: center;
   align-items: center;
   background-color: #ff2058;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 90;
 }
 
 .main-header nav {
@@ -37,4 +46,12 @@
 .main-header a:active,
 .main-header a.active {
   color: #560061;
+}
+@media (max-width: 499px) {
+  .main-header {
+    justify-content: space-between;
+  }
+  .main-header nav {
+    display: none;
+  }
 }
