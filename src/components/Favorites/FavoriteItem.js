@@ -57,6 +57,8 @@ const FavoriteItem = props => {
         dispatchHttp({ type: 'ERROR', errorMessage: error });
       });
   }, [id]);
+
+  let statsDetail;
   const attackStatsHandler = useCallback(() => {
     dispatchHttp({ type: 'OPEN' });
   }, []);
@@ -75,12 +77,58 @@ const FavoriteItem = props => {
     statsColumn3 = statsState.goals.conceded;
     statsColumn4 = statsState.goals.saves;
   }
+  let attackResults = (
+    <table>
+      <thead>
+        <tr>
+          <th>Shots</th>
+          <th>Shots on target</th>
+          <th>Pass accuracy</th>
+          <th>Key Passes</th>
+          <th>Dribble Success</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{statsState.shots.total}</td>
+          <td>{statsState.shots.on}</td>
+          <td>{statsState.passes.accuracy}</td>
+          <td>{statsState.passes.key}</td>
+          <td>
+            {(+statsState.dribbles.success / +statsState.dribbles.attempts) *
+              100}
+            %
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  );
+  let defenceResults = (
+    <table>
+      <thead>
+        <tr>
+          <th>Interceptions</th>
+          <th>Tackles</th>
+          <th>Blocks</th>
+          <th>Duel Won</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{statsState.tackles.interceptions}</td>
+          <td>{statsState.tackles.total}</td>
+          <td>{statsState.tackles.blocks}</td>
+          <td>{(+statsState.duel.won / +statsState.duel.total) * 100}%</td>
+        </tr>
+      </tbody>
+    </table>
+  );
   return (
     <React.Fragment>
       {httpState.isModal && (
         <Modal show={httpState.isModal} modalClosed={closeModalHandler}>
           {/* {httpState.loading ? <Spinner /> : null} */}
-          {statsState && statsState.player_name}
+          {/* {statsState && statsState.player_name} */}
           {/* {httpState.error ? httpState.error : null} */}
         </Modal>
       )}
