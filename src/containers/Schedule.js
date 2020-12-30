@@ -31,7 +31,7 @@ const Schedule = props => {
 
       jtime = jdate.getHours() + ':' + ('0' + jdate.getMinutes()).slice(-2); // キックオフ時刻をX:XX表記にする
       scheduleTable.push(
-        <tr align="center">
+        <tr key={i} align="center">
           <td>
             <img
               src={
@@ -46,7 +46,7 @@ const Schedule = props => {
             {game_list[i].homeTeam.name}
           </td>
           <td className={game_list[i].td_class}>
-            {jdate.getMonth() + 1}/{jdate.getDate()}({youbi[jdate.getDay()]} )
+            {jdate.getMonth() + 1}/{jdate.getDate()}({youbi[jdate.getDay()]})
             <br /> {jtime}
           </td>
           <td>

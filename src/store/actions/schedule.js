@@ -27,7 +27,7 @@ export const setSchedule = () => {
     const nm = ('00' + (nextDate.getMonth() + 1)).slice(-2);
     const nd = ('00' + nextDate.getDate()).slice(-2);
     let dateTo = ny + '-' + nm + '-' + nd;
-    console.log(dateFrom, dateTo);
+    // console.log(dateFrom, dateTo);
     // let dateTo = '2021-01-01';
 
     dispatch(startScFetch());

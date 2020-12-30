@@ -36,7 +36,7 @@ const FavoriteItem = props => {
     error: null,
     stats: null,
   });
-  console.log(httpState.error);
+
   const { id } = props;
   useEffect(() => {
     const headers = {
@@ -95,7 +95,7 @@ const FavoriteItem = props => {
                   (+statsState.dribbles.success /
                     +statsState.dribbles.attempts) *
                   100
-                ).toFixed(0, 2) || 0}
+                ).toFixed(2, '0') || 0}
                 %
               </td>
             </tr>
@@ -124,7 +124,7 @@ const FavoriteItem = props => {
                 {(
                   (+statsState.duels.won / +statsState.duels.total) *
                   100
-                ).toFixed(0, 2) || 0}
+                ).toFixed(2, '0') || 0}
                 %
               </td>
             </tr>
@@ -152,6 +152,22 @@ const FavoriteItem = props => {
     statsColumn3 = statsState.goals.conceded;
     statsColumn4 = statsState.goals.saves;
   }
+  let rating;
+  let colors = '';
+  if (statsState) {
+    rating = +statsState.games.rating;
+    if (rating < 5.5) {
+      colors = 'black';
+    } else if (rating < 6) {
+      colors = 'blue';
+    } else if (rating < 6.5) {
+      colors = 'limegreen';
+    } else if (rating < 7) {
+      colors = 'orange';
+    } else {
+      colors = 'red';
+    }
+  }
 
   return (
     <React.Fragment>
@@ -163,17 +179,40 @@ const FavoriteItem = props => {
       ) : null}
       {httpState.error && (
         <Modal show modalClosed={closeModalHandler}>
-          一日のリクエストの上限に達しました。翌日お試しください。
-          <button>
-            <a style={{ color: 'white', textDecoration: 'none' }} href="/">
-              Topに戻る
-            </a>
-          </button>
+          <p
+            style={{
+              fontWeight: 'bold',
+              lineHeight: '2',
+              letterSpacing: '1.2px',
+              fontSize: '1.2rem',
+            }}
+          >
+            一日のリクエストの上限(100)に達しました。翌日お試しください。
+            <br />
+            なお、ランキングと日程情報はご利用いただけます。
+          </p>
+
+          <a href="/">
+            <button>Topに戻る</button>
+          </a>
         </Modal>
       )}
       <Card style={{ marginBottom: '1rem' }}>
         <div className="favorite-item">
-          <h1>{props.name}</h1>
+          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <h1 className="player-name">{props.name}</h1>
+            <div className="player-rate">
+              <p>Rating</p>
+              <p
+                className="numbers"
+                style={{
+                  color: colors,
+                }}
+              >
+                {statsState ? rating.toFixed(2) : <Spinner />}
+              </p>
+            </div>
+          </div>
           <div className="player-info">
             <img
               className="player-image"
@@ -181,11 +220,13 @@ const FavoriteItem = props => {
               alt="fav-player"
             />
             <div className="player-stats">
-              <h2 style={{ fontSize: '2.5rem' }}>Top Stats</h2>
+              <h2 style={{ fontSize: '1.8rem', marginBottom: '10px' }}>
+                Top Stats
+              </h2>
               <div className="topStatList">
                 <div className="topStat">
                   <span className="stat">
-                    Appearances
+                    出場試合
                     <span className="allStatContainer">
                       {statsState ? (
                         statsState.games.appearences || 0
@@ -197,7 +238,7 @@ const FavoriteItem = props => {
                 </div>
                 <div className="topStat">
                   <span className="stat">
-                    Minutes
+                    出場時間
                     <span className="allStatContainer">
                       {statsState ? statsState.games.minutes || 0 : <Spinner />}
                     </span>
@@ -206,8 +247,8 @@ const FavoriteItem = props => {
                 <div className="topStat">
                   <span className="stat">
                     {statsState && props.position !== 'Goalkeeper'
-                      ? 'Goal'
-                      : 'Save'}
+                      ? 'ゴール数'
+                      : 'セーブ数'}
 
                     <span className="allStatContainer">
                       {statsState ? statsColumn3 || 0 : <Spinner />}
@@ -217,8 +258,8 @@ const FavoriteItem = props => {
                 <div className="topStat">
                   <span className="stat">
                     {statsState && props.position !== 'Goalkeeper'
-                      ? 'Assist'
-                      : 'Conceded'}
+                      ? 'アシスト'
+                      : '失点数'}
                     <span className="allStatContainer">
                       {statsState ? statsColumn4 || 0 : <Spinner />}
                     </span>
@@ -226,13 +267,13 @@ const FavoriteItem = props => {
                 </div>
               </div>
               <button onClick={attackStatsHandler} style={{ margin: '1.2rem' }}>
-                攻撃stats
+                攻撃データ
               </button>
               <button
                 onClick={defenseStatsHandler}
                 style={{ margin: '1.2rem' }}
               >
-                守備stats
+                守備データ
               </button>
             </div>
           </div>

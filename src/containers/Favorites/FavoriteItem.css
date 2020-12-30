@@ -2,6 +2,9 @@
   font-size: 1.15rem;
   margin: 0.25rem 0;
 }
+.player-name {
+  margin: 0;
+}
 .player-info {
   display: flex;
   justify-content: space-around;
@@ -11,6 +14,14 @@
 }
 .player-stats {
   width: 50%;
+}
+.player-rate {
+  border: 1px solid black;
+  padding: 2px;
+}
+.player-rate .numbers {
+  font-size: 4rem;
+  font-weight: bold;
 }
 .favorite-item p {
   margin: 0.25rem 0;
@@ -36,7 +47,7 @@
 }
 .topStatList .allStatContainer {
   margin-top: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
   display: block;
 }
 table.stats th {
@@ -63,7 +74,7 @@ table.stats td {
 @media (max-width: 850px) {
   .topStatList .allStatContainer {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .topStatList .stat {
     font-size: 0.5rem;
@@ -80,6 +91,14 @@ table.stats td {
   }
   .topStatList .stat {
     font-size: 1.2rem;
+  }
+  table.stats th {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+  table.stats td {
+    font-size: 1rem;
+    padding: 0.6rem;
   }
 }
 @media (max-width: 599px) {
@@ -109,15 +128,40 @@ table.stats td {
 }
 
 @media (max-width: 540px) {
+  table.stats th {
+    font-size: 1rem;
+  }
+  table.stats td {
+    font-size: 1rem;
+  }
   .topStatList .topStat {
     padding: 1.2rem;
     width: 50%;
   }
   .topStatList .allStatContainer {
     margin-top: 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .topStatList .stat {
     font-size: 1.2rem;
+  }
+  .favorite-item h1.player-name {
+    font-size: 2rem;
+  }
+  .player-rate .numbers {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  .Modal h1 {
+    font-size: 1.5rem;
+  }
+  table.stats th,
+  table.stats td {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+  .player-rate .numbers {
+    font-size: 2rem;
   }
 }

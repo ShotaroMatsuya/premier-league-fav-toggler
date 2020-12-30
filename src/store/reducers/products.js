@@ -16,7 +16,7 @@ const initialState = {
     },
     {
       id: '631',
-      name: 'Philip Walter Foden',
+      name: 'Phil Foden',
       nation: 'England',
       age: '20 years old',
       club: 'Manchester City',
@@ -76,7 +76,7 @@ const initialState = {
     },
     {
       id: '1485',
-      name: 'Bruno Miguel Borges Fernandes',
+      name: 'Bruno Fernandes',
       nation: 'Portugal',
       age: '26 years old',
       club: 'Manchester United',
@@ -100,7 +100,7 @@ const initialState = {
     },
     {
       id: '244',
-      name: 'Steven Charles Bergwijn',
+      name: 'Steven Bergwijn',
       nation: 'Netherlands',
       age: '23 years old',
       club: 'Tottenham Hotspur',

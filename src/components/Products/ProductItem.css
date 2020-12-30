@@ -25,4 +25,15 @@
 }
 .product-item .detail p {
   font-size: 1.2rem;
+  letter-spacing: 1.5px;
+}
+@media (max-width: 499px) {
+  .product-item img {
+    margin-right: 15px;
+    height: 40vw;
+  }
+  .product-item .detail p {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
 }
