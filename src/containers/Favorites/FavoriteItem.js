@@ -47,7 +47,7 @@ const FavoriteItem = props => {
       dispatchHttp({ type: 'SEND' });
       axios
         .get(
-          `https://api-football-beta.p.rapidapi.com/players?id=${id}&season=2020`,
+          `https://api-football-beta.p.rapidapi.com/players?id=${id}&season=2021`,
           {
             headers: headers,
           }
