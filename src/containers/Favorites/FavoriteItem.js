@@ -5,7 +5,6 @@ import Modal from '../../components/UI/Modal';
 import Spinner from '../../components/UI/Spinner';
 import './FavoriteItem.css';
 import axios from 'axios';
-import { RAPID_API_HOST, RAPID_API_KEY } from '../../axios';
 
 const httpReducer = (curHttpState, action) => {
   switch (action.type) {
@@ -40,8 +39,8 @@ const FavoriteItem = props => {
   const { id } = props;
   useEffect(() => {
     const headers = {
-      'x-rapidapi-key': RAPID_API_KEY,
-      'x-rapidapi-host': RAPID_API_HOST,
+      'x-rapidapi-key': process.env.REACT_APP_RAPID_API_KEY,
+      'x-rapidapi-host': process.env.REACT_APP_RAPID_API_HOST,
     };
     if (httpState.error === null) {
       dispatchHttp({ type: 'SEND' });
