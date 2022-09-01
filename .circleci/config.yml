@@ -4,7 +4,7 @@ orbs:
 version: 2.1
 executors:
   default:
-    working_directory: ~/workspace
+    working_directory: ~/repo
     docker:
       - image: circleci/node:16.13.0
   slack-executor:
@@ -23,7 +23,6 @@ jobs:
       - restore_cache:
           keys:
             - app-{{ checksum "package.json" }}
-          # if cache for exact version of `project.clj` is not present then load any most recent one
             - app-
       - run:
           name: Install dependencies
