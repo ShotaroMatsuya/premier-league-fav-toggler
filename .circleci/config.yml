@@ -22,15 +22,15 @@ jobs:
           command: echo ${CIRCLE_BRANCH}
       - restore_cache:
           keys:
-            - app-{{ checksum "package.json" }}
-            - app-
+            - npm-{{ checksum "package.json" }}
+            - npm-
       - run:
           name: Install dependencies
           command: npm install
       - save_cache:
           paths:
             - node_modules
-          key: app-{{ checksum "package.json" }}
+          key: npm-{{ checksum "package.json" }}
 
   deploy:
     executor: default
