@@ -1,0 +1,1 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/ShotaroMatsuya/premier-league-fav-toggler/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ShotaroMatsuya/premier-league-fav-toggler/tree/master)

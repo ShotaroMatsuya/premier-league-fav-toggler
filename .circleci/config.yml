@@ -1,26 +1,76 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine.
-# See: https://circleci.com/docs/2.0/configuration-reference
-version: 2.1
+orbs:
+  slack: circleci/slack@4.10.1
 
-# Define a job to be invoked later in a workflow.
-# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
-jobs:
-  say-hello:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
+version: 2.1
+executors:
+  default:
+    working_directory: ~/workspace
     docker:
-      - image: cimg/base:stable
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
+      - image: node:16
+  slack-executor:
+    docker:
+      - image: 'cibuilds/base:latest'
+    resource_class: small
+
+jobs:
+  build:
+    executor: default
     steps:
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: Show current branch
+          command: echo ${CIRCLE_BRANCH}
+      - restore_cache:
+          keys:
+            - app-{{ checksum "package.json" }}
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: app-{{ checksum "package.json" }}
 
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
+  deploy:
+    executor: default
+    steps:
+      - checkout
+      - run:
+          name: Show current branch
+          command: echo ${CIRCLE_BRANCH}
+      - run:
+          name: Build Project
+          command: |
+            npm install
+            npm run build
+            cd build
+            zip ../build.zpi -r * .[^.]*
+            echo "Build successful"
+      - run:
+          name: Deploy to FIrebase Hosting
+          command: ./node_modules/.bin/firebase deploy --token=${FIREBASE_TOKEN}
+  notify-via-slack:
+    executor: slack-executor
+    steps:
+      - run: echo "Slack notification"
+      - slack/notify:
+          event: 'always'
+          channel: C02R8V82XDH
+          template: 'basic_success_1'
+
 workflows:
-  say-hello-workflow:
+  build-and-deploy:
     jobs:
-      - say-hello
+      - build
+      - deploy
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
+      - notify-via-slack:
+          requires:
+            - deploy
+          filters:
+            branches:
+              only: master
