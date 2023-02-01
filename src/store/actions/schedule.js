@@ -16,7 +16,9 @@ const failedScFetch = payload => {
 };
 export const setSchedule = () => {
   return dispatch => {
-    let headers = { 'X-Auth-Token': 'd755ded3f55c41eea77c24a248d5e256' };
+    let headers = {
+      'X-Auth-Token': process.env.REACT_APP_PL_DATA_TOKEN,
+    };
     const nowDate = new Date();
     const y = nowDate.getFullYear();
     const m = ('00' + (nowDate.getMonth() + 1)).slice(-2);
@@ -34,7 +36,7 @@ export const setSchedule = () => {
 
     axios
       .get(
-        `https://api.football-data.org/v2/competitions/PL/matches?status=SCHEDULED&dateFrom=${dateFrom}&dateTo=${dateTo}`,
+        `${process.env.REACT_APP_PL_DATA_BASE_URL}/competitions/PL/matches?status=SCHEDULED&dateFrom=${dateFrom}&dateTo=${dateTo}`,
         { headers: headers }
       )
       .then(data_PL => {

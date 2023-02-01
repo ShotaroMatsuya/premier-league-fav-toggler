@@ -29,7 +29,7 @@ export const initRanking = () => {
     dispatch(startFetch());
     axios
       .get(
-        'https://api.football-data.org/v2/competitions/PL/standings?standingType=TOTAL',
+        `${process.env.REACT_APP_PL_DATA_BASE_URL}/competitions/PL/standings?standingType=TOTAL`,
         { headers: headers }
       )
       .then(data_PL => {
