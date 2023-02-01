@@ -1,0 +1,56 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Parameters:
+  Env:
+    Description: Enter environment.dev, stg, or prod.
+    Type: String
+    AllowedValues:
+      - dev
+      - stg
+      - prod
+    Default: dev
+Globals:
+  Function:
+    Timeout: 3
+    Environment:
+      Variables:
+        X_AUTO_TOKEN: 'e33f64183747429f9f5c530192278530'
+        API_BASE_URL: 'https://api.football-data.org/v2/'
+  Api:
+    # CORS有効化
+    Cors:
+      # 認証情報を含めることが可能か
+      AllowCredentials: false
+      # 許可するメソッド
+      AllowMethods: "'OPTIONS,POST,GET'"
+      # 許可するヘッダー文字列
+      AllowHeaders: "'*'"
+      # 許可するオリジン
+      AllowOrigin: "'*'"
+      # CORS プリフライトリクエストをキャッシュする秒数
+      MaxAge: "'180'"
+Resources:
+  BypassFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: app.lambda_handler
+      Runtime: python3.8
+      CodeUri: ./hello_world/
+      Events:
+        Callback:
+          Type: Api
+          Properties:
+            Path: /proxy/{proxy+}
+            Method: any
+            RestApiId:
+              Ref: BypassAPI
+  BypassAPI:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: Bypass
+      StageName: !Ref Env
+      EndpointConfiguration:
+        Type: 'REGIONAL'
+Outputs:
+  BypassAPI:
+    Value: !Sub 'https://${BypassAPI}.execute-api.${AWS::Region}.amazonaws.com/${Env}/proxy'
