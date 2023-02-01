@@ -1,10 +1,10 @@
-import React, { useReducer, useState, useEffect, useCallback } from 'react';
+import React, { useCallback, useEffect, useReducer, useState } from 'react';
 
+import axios from 'axios';
 import Card from '../../components/UI/Card';
 import Modal from '../../components/UI/Modal';
 import Spinner from '../../components/UI/Spinner';
 import './FavoriteItem.css';
-import axios from 'axios';
 
 const httpReducer = (curHttpState, action) => {
   switch (action.type) {
@@ -46,7 +46,7 @@ const FavoriteItem = props => {
       dispatchHttp({ type: 'SEND' });
       axios
         .get(
-          `https://api-football-beta.p.rapidapi.com/players?id=${id}&season=2021`,
+          `https://api-football-beta.p.rapidapi.com/players?id=${id}&season=2022`,
           {
             headers: headers,
           }
