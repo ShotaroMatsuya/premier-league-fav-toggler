@@ -1,0 +1,17 @@
+name: Release to release branch
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  sync-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: git describe --abbrev=0 --tags > /tmp/version
+
+      - run: git checkout -b release
+      - run: git push --force https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
