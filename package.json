@@ -36,6 +36,12 @@
     ]
   },
   "devDependencies": {
-    "firebase-tools": "^11.8.0"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.4.3",
+    "firebase-tools": "^11.8.0",
+    "mockdate": "^3.0.5",
+    "msw": "^1.1.0"
   }
 }
