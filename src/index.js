@@ -7,11 +7,9 @@ import thunk from 'redux-thunk';
 
 import App from './App';
 import './index.css';
-import productReducer from './store/reducers/products';
+import playerReducer from './store/reducers/players';
 import rankingReducer from './store/reducers/ranking';
 import scheduleReducer from './store/reducers/schedule';
-// import ProductsProvider from './context/products-context';
-// import configureProductsStore from './hooks-store/products-store';
 
 const composeEnhancers =
   process.env.NODE_ENV === 'development'
@@ -19,7 +17,7 @@ const composeEnhancers =
     : null || compose;
 
 const rootReducer = combineReducers({
-  player: productReducer,
+  player: playerReducer,
   ranking: rankingReducer,
   schedule: scheduleReducer,
 });
@@ -29,15 +27,11 @@ const store = createStore(
   composeEnhancers(applyMiddleware(thunk))
 );
 
-// configureProductsStore();
-
 ReactDOM.render(
-  // <ProductsProvider>
   <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
   </Provider>,
-  // </ProductsProvider>,
   document.getElementById('root')
 );

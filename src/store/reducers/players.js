@@ -1,7 +1,7 @@
-import { TOGGLE_FAV } from '../actions/products';
+import { TOGGLE_FAV } from '../actions/players';
 
 const initialState = {
-  products: [
+  players: [
     {
       id: '1100',
       name: 'Erling Haaland',
@@ -150,25 +150,23 @@ const initialState = {
   ],
 };
 
-const productReducer = (state = initialState, action) => {
+const playerReducer = (state = initialState, action) => {
   switch (action.type) {
     case TOGGLE_FAV:
-      const prodIndex = state.products.findIndex(
-        p => p.id === action.productId
-      );
-      const newFavStatus = !state.products[prodIndex].isFavorite;
-      const updatedProducts = [...state.products];
-      updatedProducts[prodIndex] = {
-        ...state.products[prodIndex],
+      const prodIndex = state.players.findIndex(p => p.id === action.playerId);
+      const newFavStatus = !state.players[prodIndex].isFavorite;
+      const updatedPlayers = [...state.players];
+      updatedPlayers[prodIndex] = {
+        ...state.players[prodIndex],
         isFavorite: newFavStatus,
       };
       return {
         ...state,
-        products: updatedProducts,
+        players: updatedPlayers,
       };
     default:
       return state;
   }
 };
 
-export default productReducer;
+export default playerReducer;
