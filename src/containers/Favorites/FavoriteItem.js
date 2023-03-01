@@ -19,7 +19,7 @@ const httpReducer = (curHttpState, action) => {
         ...curHttpState,
         isModal: true,
         loading: false,
-        error: action.errorMessage,
+        error: action.errorMessage
       };
     case 'CLEAR':
       return { ...curHttpState, isModal: false, error: null, stats: null };
@@ -27,20 +27,20 @@ const httpReducer = (curHttpState, action) => {
       return curHttpState;
   }
 };
-const FavoriteItem = props => {
+const FavoriteItem = (props) => {
   const [statsState, setStatsState] = useState(null);
   const [httpState, dispatchHttp] = useReducer(httpReducer, {
     loading: false,
     isModal: false,
     error: null,
-    stats: null,
+    stats: null
   });
 
   const { id } = props;
   useEffect(() => {
     const headers = {
       'x-rapidapi-key': process.env.REACT_APP_RAPID_API_KEY,
-      'x-rapidapi-host': process.env.REACT_APP_RAPID_API_HOST,
+      'x-rapidapi-host': process.env.REACT_APP_RAPID_API_HOST
     };
     if (httpState.error === null) {
       dispatchHttp({ type: 'SEND' });
@@ -48,19 +48,19 @@ const FavoriteItem = props => {
         .get(
           `https://api-football-beta.p.rapidapi.com/players?id=${id}&season=2022`,
           {
-            headers: headers,
+            headers: headers
           }
         )
-        .then(response => {
+        .then((response) => {
           console.log('AXIOS WORKING');
           dispatchHttp({
-            type: 'RESPONSE',
+            type: 'RESPONSE'
           });
           const stats = response.data.response[0].statistics[0];
           setStatsState(stats);
           console.log(response.data.response[0].statistics[0]);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log('AXIOS FETCHING ERROR');
           dispatchHttp({ type: 'ERROR', errorMessage: error });
         });
@@ -183,7 +183,7 @@ const FavoriteItem = props => {
               fontWeight: 'bold',
               lineHeight: '2',
               letterSpacing: '1.2px',
-              fontSize: '1.2rem',
+              fontSize: '1.2rem'
             }}
           >
             一日のリクエストの上限(100)に達しました。翌日お試しください。
@@ -205,7 +205,7 @@ const FavoriteItem = props => {
               <p
                 className="numbers"
                 style={{
-                  color: colors,
+                  color: colors
                 }}
               >
                 {statsState ? rating.toFixed(2) : <Spinner />}

@@ -1,3 +1,4 @@
+/* eslint-disable no-case-declarations */
 import { TOGGLE_FAV } from '../actions/players';
 
 const initialState = {
@@ -12,7 +13,7 @@ const initialState = {
       position: 'Forward',
       imageUrl:
         'https://resources.premierleague.com/premierleague/photos/players/250x250/p223094.png',
-      isFavorite: false,
+      isFavorite: false
     },
     {
       id: '51617',
@@ -24,7 +25,7 @@ const initialState = {
       position: 'Forward',
       imageUrl:
         'https://resources.premierleague.com/premierleague/photos/players/250x250/p447203.png',
-      isFavorite: false,
+      isFavorite: false
     },
     {
       id: '882',
@@ -36,7 +37,7 @@ const initialState = {
       position: 'Goalkeeper',
       imageUrl:
         'https://resources.premierleague.com/premierleague/photos/players/250x250/p51940.png',
-      isFavorite: false,
+      isFavorite: false
     },
     {
       id: '30435',
@@ -48,7 +49,7 @@ const initialState = {
       position: 'Midfielder',
       imageUrl:
         'https://resources.premierleague.com/premierleague/photos/players/250x250/p445044.png',
-      isFavorite: false,
+      isFavorite: false
     },
     {
       id: '47380',
@@ -60,7 +61,7 @@ const initialState = {
       position: 'Defender',
       imageUrl:
         'https://resources.premierleague.com/premierleague/photos/players/250x250/p179268.png',
-      isFavorite: false,
+      isFavorite: false
     },
     {
       id: '2597',
@@ -72,7 +73,7 @@ const initialState = {
       position: 'Defender',
       imageUrl:
         'https://resources.premierleague.com/premierleague/photos/players/250x250/p223723.png',
-      isFavorite: false,
+      isFavorite: false
     },
     {
       id: '174',
@@ -84,7 +85,7 @@ const initialState = {
       position: 'Midfielder',
       imageUrl:
         'https://resources.premierleague.com/premierleague/photos/players/250x250/p80607.png',
-      isFavorite: false,
+      isFavorite: false
     },
     {
       id: '567',
@@ -96,7 +97,7 @@ const initialState = {
       position: 'Defender',
       imageUrl:
         'https://resources.premierleague.com/premierleague/photos/players/250x250/p171314.png',
-      isFavorite: false,
+      isFavorite: false
     },
     {
       id: '159',
@@ -108,7 +109,7 @@ const initialState = {
       position: 'Goalkeeper',
       imageUrl:
         'https://resources.premierleague.com/premierleague/photos/players/250x250/p37915.png',
-      isFavorite: false,
+      isFavorite: false
     },
 
     {
@@ -121,7 +122,7 @@ const initialState = {
       position: 'Midfielder',
       imageUrl:
         'https://resources.premierleague.com/premierleague/photos/players/250x250/p232787.png',
-      isFavorite: false,
+      isFavorite: false
     },
     {
       id: '507',
@@ -133,7 +134,7 @@ const initialState = {
       position: 'Midfielder',
       imageUrl:
         'https://resources.premierleague.com/premierleague/photos/players/250x250/p61558.png',
-      isFavorite: false,
+      isFavorite: false
     },
     {
       id: '643',
@@ -145,24 +146,26 @@ const initialState = {
       position: 'Forward',
       imageUrl:
         'https://resources.premierleague.com/premierleague/photos/players/250x250/p205651.png',
-      isFavorite: false,
-    },
-  ],
+      isFavorite: false
+    }
+  ]
 };
 
 const playerReducer = (state = initialState, action) => {
   switch (action.type) {
     case TOGGLE_FAV:
-      const prodIndex = state.players.findIndex(p => p.id === action.playerId);
+      const prodIndex = state.players.findIndex(
+        (p) => p.id === action.playerId
+      );
       const newFavStatus = !state.players[prodIndex].isFavorite;
       const updatedPlayers = [...state.players];
       updatedPlayers[prodIndex] = {
         ...state.players[prodIndex],
-        isFavorite: newFavStatus,
+        isFavorite: newFavStatus
       };
       return {
         ...state,
-        players: updatedPlayers,
+        players: updatedPlayers
       };
     default:
       return state;

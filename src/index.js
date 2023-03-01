@@ -19,7 +19,7 @@ const composeEnhancers =
 const rootReducer = combineReducers({
   player: playerReducer,
   ranking: rankingReducer,
-  schedule: scheduleReducer,
+  schedule: scheduleReducer
 });
 
 const store = createStore(

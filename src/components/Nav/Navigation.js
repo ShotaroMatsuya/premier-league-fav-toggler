@@ -5,7 +5,7 @@ import DrawerToggle from './DrawerToggle';
 
 import './Navigation.css';
 
-const Navigation = props => {
+const Navigation = (props) => {
   return (
     <header className="main-header">
       <DrawerToggle clicked={props.drawerToggleClicked} />

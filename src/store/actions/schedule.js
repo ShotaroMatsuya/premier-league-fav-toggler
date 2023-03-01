@@ -8,16 +8,16 @@ export const FAILED_SC_FETCH = 'FAILED_SC_FETCH';
 const startScFetch = () => {
   return { type: START_SC_FETCH };
 };
-const successScFetch = payload => {
+const successScFetch = (payload) => {
   return { type: SUCCESS_SC_FETCH, payload: payload };
 };
-const failedScFetch = payload => {
+const failedScFetch = (payload) => {
   return { type: FAILED_SC_FETCH, payload: payload };
 };
 export const setSchedule = () => {
-  return dispatch => {
+  return (dispatch) => {
     let headers = {
-      'X-Auth-Token': process.env.REACT_APP_PL_DATA_TOKEN,
+      'X-Auth-Token': process.env.REACT_APP_PL_DATA_TOKEN
     };
     const nowDate = new Date();
     const y = nowDate.getFullYear();
@@ -39,11 +39,11 @@ export const setSchedule = () => {
         `${process.env.REACT_APP_PL_DATA_BASE_URL}/competitions/PL/matches?status=SCHEDULED&dateFrom=${dateFrom}&dateTo=${dateTo}`,
         { headers: headers }
       )
-      .then(data_PL => {
+      .then((data_PL) => {
         dispatch(successScFetch(data_PL));
         // console.log('success' + data_PL);
       })
-      .catch(error => {
+      .catch((error) => {
         dispatch(failedScFetch(error));
         console.log('error' + error);
       });
