@@ -94,16 +94,10 @@ workflows:
       - prettier:
           requires:
             - build
-          filters:
-            branches:
-              only: master
       - test:
           requires:
             - build
             - prettier
-          filters:
-            branches:
-              only: master
       - deploy:
           requires:
             - build
