@@ -33,7 +33,7 @@ jobs:
           key: npm-{{ checksum "package.json" }}
 
   prettier:
-    executor: app-executor
+    executor: default
     steps:
       - checkout
       - run:
@@ -47,7 +47,7 @@ jobs:
           name: Run prettier check
           command: npm run prettier:check
   test:
-    executor: app-executor
+    executor: default
     steps:
       - checkout
       - run:
@@ -94,14 +94,10 @@ workflows:
       - prettier:
           requires:
             - build
-          filters:
-            only: master
       - test:
           requires:
             - build
             - prettier
-          filters:
-            only: master
       - deploy:
           requires:
             - build
