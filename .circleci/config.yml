@@ -32,6 +32,34 @@ jobs:
             - node_modules
           key: npm-{{ checksum "package.json" }}
 
+  prettier:
+    executor: app-executor
+    steps:
+      - checkout
+      - run:
+          name: Show current branch
+          command: echo ${CIRCLE_BRANCH}
+      - restore_cache:
+          keys:
+            - npm-{{ checksum "package.json" }}
+            - npm-
+      - run:
+          name: Run prettier check
+          command: npm run prettier:check
+  test:
+    executor: app-executor
+    steps:
+      - checkout
+      - run:
+          name: Show current branch
+          command: echo ${CIRCLE_BRANCH}
+      - restore_cache:
+          keys:
+            - npm-{{ checksum "package.json" }}
+            - npm-
+      - run:
+          name: Run Component Test
+          command: npm run test
   deploy:
     executor: default
     steps:
@@ -63,6 +91,17 @@ workflows:
   build-and-deploy:
     jobs:
       - build
+      - prettier:
+          requires:
+            - build
+          filters:
+            only: master
+      - test:
+          requires:
+            - build
+            - prettier
+          filters:
+            only: master
       - deploy:
           requires:
             - build
