@@ -6,9 +6,10 @@ import scheduleReducer from '../../store/reducers/schedule';
 import SchedulePage from '../Schedule';
 
 const rootReducer = combineReducers({
-  schedule: scheduleReducer,
+  schedule: scheduleReducer
 });
 const store = createStore(rootReducer, applyMiddleware(thunk));
+
 test('render Schedule Table of PL', async () => {
   render(
     <Provider store={store}>
