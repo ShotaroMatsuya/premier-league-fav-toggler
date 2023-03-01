@@ -1,13 +1,13 @@
 import {
   START_SC_FETCH,
   SUCCESS_SC_FETCH,
-  FAILED_SC_FETCH,
+  FAILED_SC_FETCH
 } from '../actions/schedule';
 
 const initState = {
   schedule: null,
   error: false,
-  loading: false,
+  loading: false
 };
 
 const scheduleReducer = (state = initState, action) => {
@@ -21,7 +21,7 @@ const scheduleReducer = (state = initState, action) => {
         ...state,
         loading: false,
         error: true,
-        schedule: action.payload,
+        schedule: action.payload
       };
     default:
       return state;

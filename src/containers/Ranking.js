@@ -6,7 +6,7 @@ import { initRanking } from '../store/actions/ranking';
 import Card from '../components/UI/Card';
 import Spinner from '../components/UI/Spinner';
 
-const Ranking = props => {
+const Ranking = (props) => {
   const { setRanking } = props;
   useEffect(() => {
     setRanking();
@@ -60,16 +60,16 @@ const Ranking = props => {
   return rankingTable;
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     ranking: state.ranking.payload,
     loading: state.ranking.loading,
-    error: state.ranking.error,
+    error: state.ranking.error
   };
 };
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    setRanking: () => dispatch(initRanking()),
+    setRanking: () => dispatch(initRanking())
   };
 };
 

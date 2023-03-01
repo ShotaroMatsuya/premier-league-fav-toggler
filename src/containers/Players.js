@@ -5,12 +5,12 @@ import PlayerItem from '../components/Players/PlayerItem';
 
 import './Players.css';
 
-const Players = props => {
-  const PlayerList = useSelector(state => state.player.players);
+const Players = (props) => {
+  const PlayerList = useSelector((state) => state.player.players);
 
   return (
     <ul className="players-list">
-      {PlayerList.map(prod => (
+      {PlayerList.map((prod) => (
         <PlayerItem
           key={prod.id}
           id={prod.id}

@@ -3,7 +3,7 @@ import { START_FETCH, SUCCESS_FETCH, FAILED_FETCH } from '../actions/ranking';
 const initialState = {
   payload: null,
   error: false,
-  loading: false,
+  loading: false
 };
 
 const rankingReducer = (state = initialState, action) => {
@@ -17,7 +17,7 @@ const rankingReducer = (state = initialState, action) => {
         ...state,
         loading: false,
         error: true,
-        payload: action.payload,
+        payload: action.payload
       };
     default:
       return state;

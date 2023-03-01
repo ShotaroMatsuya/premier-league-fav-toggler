@@ -5,7 +5,7 @@ import './SideDrawer.css';
 import Backdrop from '../UI/Backdrop';
 import { NavLink } from 'react-router-dom';
 
-const sideDrawer = props => {
+const sideDrawer = (props) => {
   let attachedClasses = ['SideDrawer', 'Close'];
   if (props.open) {
     attachedClasses = ['SideDrawer', 'Open'];

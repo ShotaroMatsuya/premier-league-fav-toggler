@@ -7,7 +7,7 @@ import PlayerPage from './containers/Players';
 import RankingPage from './containers/Ranking';
 import SchedulePage from './containers/Schedule';
 
-const App = props => {
+const App = (props) => {
   return (
     <Layout>
       <main>

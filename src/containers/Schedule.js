@@ -6,8 +6,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import Card from '../components/UI/Card';
 import Spinner from '../components/UI/Spinner';
 
-const Schedule = props => {
-  const schedule = useSelector(state => state.schedule);
+const Schedule = (props) => {
+  const schedule = useSelector((state) => state.schedule);
   const dispatch = useDispatch();
   let scheduleTable = [];
   let game_list = [];
