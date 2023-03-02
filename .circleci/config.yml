@@ -112,13 +112,11 @@ workflows:
             - build
       - test:
           requires:
-            - build
             - linting
             - prettier
       - deploy:
           requires:
-            - linting
-            - prettier
+            - test
           filters:
             branches:
               only: master
