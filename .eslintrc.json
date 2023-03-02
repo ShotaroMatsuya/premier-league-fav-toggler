@@ -23,6 +23,7 @@
   },
   "plugins": ["react", "react-hooks", "jest"],
   "rules": {
+    "react/prop-types": "off",
     "semi": [2, "always"],
     "space-before-function-paren": [
       0,
