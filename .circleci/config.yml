@@ -31,7 +31,20 @@ jobs:
           paths:
             - node_modules
           key: npm-{{ checksum "package.json" }}
-
+  linting:
+    executor: default
+    steps:
+      - checkout
+      - run:
+          name: Show current branch
+          command: echo ${CIRCLE_BRANCH}
+      - restore_cache:
+          keys:
+            - npm-{{ checksum "package.json" }}
+            - npm-
+      - run:
+          name: Run linting
+          command: npm run lint
   prettier:
     executor: default
     steps:
@@ -91,16 +104,21 @@ workflows:
   build-and-deploy:
     jobs:
       - build
+      - linting:
+          requires:
+            - build
       - prettier:
           requires:
             - build
       - test:
           requires:
             - build
+            - linting
             - prettier
       - deploy:
           requires:
-            - build
+            - linting
+            - prettier
           filters:
             branches:
               only: master
