@@ -9,10 +9,10 @@ import Spinner from '../components/UI/Spinner';
 const Schedule = (props) => {
   const schedule = useSelector((state) => state.schedule);
   const dispatch = useDispatch();
-  let scheduleTable = [];
+  const scheduleTable = [];
   let game_list = [];
   let games_num;
-  let youbi = ['日', '月', '火', '水', '木', '金', '土'];
+  const youbi = ['日', '月', '火', '水', '木', '金', '土'];
   let date, jdate;
   let jtime = '';
 

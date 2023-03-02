@@ -48,7 +48,7 @@ const FavoriteItem = (props) => {
         .get(
           `https://api-football-beta.p.rapidapi.com/players?id=${id}&season=2022`,
           {
-            headers: headers
+            headers
           }
         )
         .then((response) => {
@@ -202,14 +202,14 @@ const FavoriteItem = (props) => {
             <h1 className="player-name">{props.name}</h1>
             <div className="player-rate">
               <p>Rating</p>
-              <p
+              <div
                 className="numbers"
                 style={{
                   color: colors
                 }}
               >
                 {statsState ? rating.toFixed(2) : <Spinner />}
-              </p>
+              </div>
             </div>
           </div>
           <div className="player-info">

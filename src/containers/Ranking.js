@@ -36,7 +36,7 @@ const Ranking = (props) => {
       );
     });
   }
-  let rankingTable = rankingChart ? (
+  const rankingTable = rankingChart ? (
     <Card>
       <table className="ranking">
         <thead>

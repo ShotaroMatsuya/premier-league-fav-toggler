@@ -6,7 +6,7 @@ import Card from '../UI/Card';
 import { toggleFav } from '../../store/actions/players';
 import './PlayerItem.css';
 
-const PlayerItem = React.memo((props) => {
+const PlayerItem = React.memo(function Cmp(props) {
   const dispatch = useDispatch();
   console.log('RENDERING');
 

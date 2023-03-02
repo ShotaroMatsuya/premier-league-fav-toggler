@@ -20,7 +20,7 @@ const Modal = (props) => {
 };
 
 export default React.memo(
-  //shouldComponentUpdateと真逆のロジックをセットすれば良い
+  // shouldComponentUpdateと真逆のロジックをセットすれば良い
   Modal,
   (prevProps, nextProps) =>
     nextProps.show === prevProps.show &&
