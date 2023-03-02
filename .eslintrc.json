@@ -4,7 +4,7 @@
     "es6": true,
     "jest/globals": true
   },
-  "extends": ["plugin:react/recommended", "standard"],
+  "extends": ["plugin:react/recommended", "standard", "prettier"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -23,6 +23,7 @@
   },
   "plugins": ["react", "react-hooks", "jest"],
   "rules": {
+    "react/prop-types": "off",
     "semi": [2, "always"],
     "space-before-function-paren": [
       0,

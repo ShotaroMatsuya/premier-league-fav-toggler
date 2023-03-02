@@ -8,7 +8,7 @@ export const ProductsContext = React.createContext({
 });
 
 // export functional component
-export default (props) => {
+export default function FunctionalComponent(props) {
   const [productsList, setProductsList] = useState([
     {
       id: 'p1',
@@ -55,4 +55,4 @@ export default (props) => {
       {props.children}
     </ProductsContext.Provider>
   );
-};
+}
