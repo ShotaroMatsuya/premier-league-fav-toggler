@@ -8,7 +8,6 @@ import './PlayerItem.css';
 
 const PlayerItem = React.memo(function Cmp(props) {
   const dispatch = useDispatch();
-  console.log('RENDERING');
 
   const toggleFavHandler = () => {
     dispatch(toggleFav(props.id));

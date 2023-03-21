@@ -22,3 +22,13 @@ test('render Schedule Table of PL', async () => {
     expect(tableRows).toHaveLength(13);
   });
 });
+
+test('should have 3 columns in the table', () => {
+  render(
+    <Provider store={store}>
+      <SchedulePage />
+    </Provider>
+  );
+  const tableColumns = screen.getAllByRole('columnheader');
+  expect(tableColumns).toHaveLength(3);
+});

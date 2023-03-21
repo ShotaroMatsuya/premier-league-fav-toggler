@@ -1,4 +1,5 @@
 import { rest } from 'msw';
+import { mockStats } from '../mocks/mockStats';
 
 export const handlers = [
   rest.get(
@@ -781,6 +782,25 @@ export const handlers = [
             ]
           })
         );
+      }
+    }
+  ),
+  rest.get(
+    `https://${process.env.REACT_APP_RAPID_API_HOST}/players`,
+    (req, res, ctx) => {
+      const query = req.url.searchParams;
+      const id = query.get('id');
+      if (id === '882') {
+        // GK(score: 6.88)
+        return res(ctx.json(mockStats[1]));
+      } else if (id === '2597') {
+        // DF
+        return res(ctx.json(mockStats[2]));
+      } else if (id === '567') {
+        return res(ctx.status(429), ctx.json({ message: 'Too many requests' }));
+      } else {
+        // Field Player()
+        return res(ctx.json(mockStats[0]));
       }
     }
   )
