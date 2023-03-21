@@ -182,6 +182,7 @@ const FavoriteItem = (props) => {
               letterSpacing: '1.2px',
               fontSize: '1.2rem'
             }}
+            data-testid="error-modal"
           >
             一日のリクエストの上限(100)に達しました。翌日お試しください。
             <br />
@@ -204,6 +205,7 @@ const FavoriteItem = (props) => {
                 style={{
                   color: colors
                 }}
+                data-testid="total-rating"
               >
                 {statsState ? rating.toFixed(2) : <Spinner />}
               </div>
@@ -223,7 +225,10 @@ const FavoriteItem = (props) => {
                 <div className="topStat">
                   <span className="stat">
                     出場試合
-                    <span className="allStatContainer">
+                    <span
+                      className="allStatContainer"
+                      data-testid="appearance-count"
+                    >
                       {statsState ? (
                         statsState.games.appearences || 0
                       ) : (
@@ -235,7 +240,10 @@ const FavoriteItem = (props) => {
                 <div className="topStat">
                   <span className="stat">
                     出場時間
-                    <span className="allStatContainer">
+                    <span
+                      className="allStatContainer"
+                      data-testid="appearance-time"
+                    >
                       {statsState ? statsState.games.minutes || 0 : <Spinner />}
                     </span>
                   </span>
