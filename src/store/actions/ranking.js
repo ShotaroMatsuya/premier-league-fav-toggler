@@ -34,11 +34,9 @@ export const initRanking = () => {
       )
       .then((data_PL) => {
         dispatch(successFetch(data_PL.data.standings[0].table));
-        // console.log(data_PL.data.standings[0].table);
       })
       .catch((err) => {
         dispatch(failedFetch(err));
-        console.log(err);
       });
   };
 };

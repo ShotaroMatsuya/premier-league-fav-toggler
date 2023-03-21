@@ -52,16 +52,13 @@ const FavoriteItem = (props) => {
           }
         )
         .then((response) => {
-          console.log('AXIOS WORKING');
           dispatchHttp({
             type: 'RESPONSE'
           });
           const stats = response.data.response[0].statistics[0];
           setStatsState(stats);
-          console.log(response.data.response[0].statistics[0]);
         })
         .catch((error) => {
-          console.log('AXIOS FETCHING ERROR');
           dispatchHttp({ type: 'ERROR', errorMessage: error });
         });
     }
