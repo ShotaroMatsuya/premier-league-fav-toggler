@@ -1,0 +1,27 @@
+FROM cypress/base:16
+WORKDIR /app
+
+RUN apt-get update
+RUN apt-get install -y locales locales-all
+RUN apt-get remove fonts-vlgothic
+RUN apt-get install -y fonts-vlgothic
+RUN locale-gen ja_JP.UTF-8
+ENV LANG ja_JP.UTF-8
+ENV LC_CTYPE ja_JP.UTF-8
+RUN localedef -f UTF-8 -i ja_JP ja_JP.utf8
+
+# 日本語フォント表示用にnoto-cjkを追加
+RUN apt-get install --no-install-recommends -y fonts-noto fonts-noto-cjk
+# dependencies will be installed only if the package files change
+# COPY package.json .
+# COPY package-lock.json .
+
+# by setting CI environment variable we switch the Cypress install messages
+# to small "started / finished" and avoid 1000s of lines of progress messages
+# https://github.com/cypress-io/cypress/issues/1243
+# ENV CI=1
+# RUN npm ci
+# verify that Cypress has been installed correctly.
+# running this command separately from "cypress run" will also cache its result
+# to avoid verifying again when running the tests
+RUN npx cypress verify
