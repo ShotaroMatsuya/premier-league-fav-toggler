@@ -1,8 +1,11 @@
 orbs:
   slack: circleci/slack@4.10.1
-
+  cypress: cypress-io/cypress@2.2.0
 version: 2.1
 executors:
+  cypress-docker:
+    docker:
+      - image: 'shotaromatsuya/cypress-base:16'
   default:
     working_directory: ~/repo
     docker:
@@ -11,7 +14,8 @@ executors:
     docker:
       - image: 'cibuilds/base:latest'
     resource_class: small
-
+environment:
+  TZ: '/usr/share/zoneinfo/Asia/Tokyo'
 jobs:
   build:
     executor: default
@@ -114,9 +118,34 @@ workflows:
           requires:
             - linting
             - prettier
+      - cypress/install:
+          requires:
+            - linting
+            - prettier
+          cache-key: >-
+            cache-{{ arch }}-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          filters:
+            branches:
+              only: master
+      - cypress/run:
+          cache-key: >-
+            cache-{{ arch }}-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          requires:
+            - cypress/install
+          filters:
+            branches:
+              only: master
+          record: true
+          parallel: true
+          parallelism: 2
+          group: 2 machines
+          executor: cypress-docker
+          start: npm run start
+          wait-on: 'http://localhost:3000'
       - deploy:
           requires:
             - test
+            - cypress/run
           filters:
             branches:
               only: master
