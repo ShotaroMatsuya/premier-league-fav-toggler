@@ -9,7 +9,7 @@ executors:
   default:
     working_directory: ~/repo
     docker:
-      - image: node:16-alpine
+      - image: shotaromatsuya/premier-node:16
   slack-executor:
     docker:
       - image: 'cibuilds/base:latest'
@@ -135,7 +135,7 @@ workflows:
           record: true
           parallel: true
           parallelism: 2
-          group: 2 machines 
+          group: 2 machines
           executor: cypress-docker
           start: npm run start
           wait-on: 'http://localhost:3000'

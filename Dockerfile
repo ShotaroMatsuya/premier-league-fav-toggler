@@ -1,4 +1,4 @@
-FROM node:16-alpine as desp
+FROM shotaromatsuya/premier-node:16 as desp
 WORKDIR /desp
 
 COPY package*.json ./
@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN npm ci
 
 ## runtime環境を作成
-FROM node:16-alpine
+FROM shotaromatsuya/premier-node:16
 WORKDIR /app
 
 ENV LANG C.UTF-8
