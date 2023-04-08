@@ -1,0 +1,577 @@
+{
+  "count": 17,
+  "filters": { "status": ["SCHEDULED"] },
+  "competition": {
+    "id": 2021,
+    "area": { "id": 2072, "name": "England" },
+    "name": "Premier League",
+    "code": "PL",
+    "plan": "TIER_ONE",
+    "lastUpdated": "2022-03-20T08:58:54Z"
+  },
+  "matches": [
+    {
+      "id": 416088,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-08T11:30:00Z",
+      "status": "SCHEDULED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-04-06T01:32:00Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 66, "name": "Manchester United FC" },
+      "awayTeam": { "id": 62, "name": "Everton FC" },
+      "referees": [
+        {
+          "id": 11605,
+          "name": "Michael Oliver",
+          "role": "REFEREE",
+          "nationality": "England"
+        }
+      ]
+    },
+    {
+      "id": 416085,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-08T14:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-04-05T01:32:01Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 76, "name": "Wolverhampton Wanderers FC" },
+      "awayTeam": { "id": 61, "name": "Chelsea FC" },
+      "referees": [
+        {
+          "id": 11309,
+          "name": "Peter Bankes",
+          "role": "REFEREE",
+          "nationality": "England"
+        }
+      ]
+    },
+    {
+      "id": 416086,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-08T14:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-04-06T01:32:01Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 73, "name": "Tottenham Hotspur FC" },
+      "awayTeam": { "id": 397, "name": "Brighton & Hove Albion FC" },
+      "referees": [
+        {
+          "id": 11494,
+          "name": "Stuart Attwell",
+          "role": "REFEREE",
+          "nationality": "England"
+        }
+      ]
+    },
+    {
+      "id": 416090,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-08T14:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-04-05T01:32:01Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 338, "name": "Leicester City FC" },
+      "awayTeam": { "id": 1044, "name": "AFC Bournemouth" },
+      "referees": [
+        {
+          "id": 11556,
+          "name": "David Coote",
+          "role": "REFEREE",
+          "nationality": "England"
+        }
+      ]
+    },
+    {
+      "id": 416092,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-08T14:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-04-05T01:32:01Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 63, "name": "Fulham FC" },
+      "awayTeam": { "id": 563, "name": "West Ham United FC" },
+      "referees": [
+        {
+          "id": 23568,
+          "name": "Jarred Gillett",
+          "role": "REFEREE",
+          "nationality": "Australia"
+        }
+      ]
+    },
+    {
+      "id": 416093,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-08T14:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-04-05T01:32:01Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 402, "name": "Brentford FC" },
+      "awayTeam": { "id": 67, "name": "Newcastle United FC" },
+      "referees": [
+        {
+          "id": 11443,
+          "name": "Chris Kavanagh",
+          "role": "REFEREE",
+          "nationality": "England"
+        }
+      ]
+    },
+    {
+      "id": 416094,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-08T14:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-04-05T01:32:01Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 58, "name": "Aston Villa FC" },
+      "awayTeam": { "id": 351, "name": "Nottingham Forest FC" },
+      "referees": [
+        {
+          "id": 11580,
+          "name": "Anthony Taylor",
+          "role": "REFEREE",
+          "nationality": "England"
+        }
+      ]
+    },
+    {
+      "id": 416087,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-08T16:30:00Z",
+      "status": "SCHEDULED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-04-02T01:32:02Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 340, "name": "Southampton FC" },
+      "awayTeam": { "id": 65, "name": "Manchester City FC" },
+      "referees": [
+        {
+          "id": 11446,
+          "name": "Robert Jones",
+          "role": "REFEREE",
+          "nationality": "England"
+        }
+      ]
+    },
+    {
+      "id": 416091,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-09T13:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-04-05T01:32:01Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 341, "name": "Leeds United FC" },
+      "awayTeam": { "id": 354, "name": "Crystal Palace FC" },
+      "referees": [
+        {
+          "id": 11430,
+          "name": "Simon Hooper",
+          "role": "REFEREE",
+          "nationality": "England"
+        }
+      ]
+    },
+    {
+      "id": 416089,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-09T15:30:00Z",
+      "status": "SCHEDULED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-04-03T01:32:02Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 64, "name": "Liverpool FC" },
+      "awayTeam": { "id": 57, "name": "Arsenal FC" },
+      "referees": [
+        {
+          "id": 11520,
+          "name": "Paul Tierney",
+          "role": "REFEREE",
+          "nationality": "England"
+        }
+      ]
+    },
+    {
+      "id": 416084,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-15T11:30:00Z",
+      "status": "SCHEDULED",
+      "matchday": 31,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-02-22T00:20:24Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 58, "name": "Aston Villa FC" },
+      "awayTeam": { "id": 67, "name": "Newcastle United FC" },
+      "referees": []
+    },
+    {
+      "id": 416075,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-15T14:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 31,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-02-22T00:20:23Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 76, "name": "Wolverhampton Wanderers FC" },
+      "awayTeam": { "id": 402, "name": "Brentford FC" },
+      "referees": []
+    },
+    {
+      "id": 416077,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-15T14:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 31,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-02-22T00:20:23Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 73, "name": "Tottenham Hotspur FC" },
+      "awayTeam": { "id": 1044, "name": "AFC Bournemouth" },
+      "referees": []
+    },
+    {
+      "id": 416078,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-15T14:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 31,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-02-22T00:20:23Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 340, "name": "Southampton FC" },
+      "awayTeam": { "id": 354, "name": "Crystal Palace FC" },
+      "referees": []
+    },
+    {
+      "id": 416082,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-15T14:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 31,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-02-22T00:20:24Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 62, "name": "Everton FC" },
+      "awayTeam": { "id": 63, "name": "Fulham FC" },
+      "referees": []
+    },
+    {
+      "id": 416083,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-15T14:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 31,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-02-22T00:20:24Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 61, "name": "Chelsea FC" },
+      "awayTeam": { "id": 397, "name": "Brighton & Hove Albion FC" },
+      "referees": []
+    },
+    {
+      "id": 416080,
+      "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 30
+      },
+      "utcDate": "2023-04-15T16:30:00Z",
+      "status": "SCHEDULED",
+      "matchday": 31,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2023-03-19T00:20:23Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": { "homeTeam": null, "awayTeam": null },
+        "halfTime": { "homeTeam": null, "awayTeam": null },
+        "extraTime": { "homeTeam": null, "awayTeam": null },
+        "penalties": { "homeTeam": null, "awayTeam": null }
+      },
+      "homeTeam": { "id": 65, "name": "Manchester City FC" },
+      "awayTeam": { "id": 338, "name": "Leicester City FC" },
+      "referees": []
+    }
+  ]
+}

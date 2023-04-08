@@ -26,3 +26,29 @@
 const compareSnapshotCommand = require('cypress-visual-regression/dist/command');
 
 compareSnapshotCommand();
+
+Cypress.Commands.add('rankingRequest', () => {
+  cy.intercept(
+    {
+      method: 'GET',
+      url: `https://cebd9wfite.execute-api.ap-northeast-1.amazonaws.com/dev/proxy/competitions/PL/standings?standingType=TOTAL`
+    },
+    {
+      statusCode: 200,
+      fixture: 'rankingList'
+    }
+  ).as('fetchedRankingList');
+});
+
+Cypress.Commands.add('scheduleRequest', () => {
+  cy.intercept(
+    {
+      method: 'GET',
+      url: `https://cebd9wfite.execute-api.ap-northeast-1.amazonaws.com/dev/proxy/competitions/PL/matches?status=SCHEDULED&*`
+    },
+    {
+      statusCode: 200,
+      fixture: 'scheduleList'
+    }
+  ).as('fetchedScheduleList');
+});
