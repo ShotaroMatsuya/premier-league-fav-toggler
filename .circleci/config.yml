@@ -105,8 +105,19 @@ jobs:
           template: 'basic_success_1'
 
 workflows:
-  build:
+  build-and-deploy:
     jobs:
+      - build
+      - linting:
+          requires:
+            - build
+      - prettier:
+          requires:
+            - build
+      - test:
+          requires:
+            - linting
+            - prettier
       - cypress/install:
           cache-key: >-
             cache-{{ arch }}-{{ .Branch }}-{{ checksum "package-lock.json" }}
@@ -128,10 +139,16 @@ workflows:
           executor: cypress-docker
           start: npm run start
           wait-on: 'http://localhost:3000'
-      - notify-via-slack:
+      - deploy:
           requires:
+            - test
             - cypress/run
           filters:
             branches:
-              only:
-                - master
+              only: master
+      - notify-via-slack:
+          requires:
+            - deploy
+          filters:
+            branches:
+              only: master
