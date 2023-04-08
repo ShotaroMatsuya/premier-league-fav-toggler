@@ -11,10 +11,10 @@ import playerReducer from './store/reducers/players';
 import rankingReducer from './store/reducers/ranking';
 import scheduleReducer from './store/reducers/schedule';
 
-const composeEnhancers =
-  process.env.NODE_ENV === 'development'
-    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-    : null || compose;
+// const composeEnhancers =
+//   process.env.NODE_ENV === 'development'
+//     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+//     : null || compose;
 
 const rootReducer = combineReducers({
   player: playerReducer,
@@ -22,10 +22,7 @@ const rootReducer = combineReducers({
   schedule: scheduleReducer
 });
 
-const store = createStore(
-  rootReducer,
-  composeEnhancers(applyMiddleware(thunk))
-);
+const store = createStore(rootReducer, compose(applyMiddleware(thunk)));
 
 ReactDOM.render(
   <Provider store={store}>
