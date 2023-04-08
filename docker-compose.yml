@@ -21,6 +21,22 @@ services:
     volumes:
       - ./:/app
       - node_modules:/app/node_modules
+  cypress:
+    build:
+      context: ./cypress
+      dockerfile: Dockerfile.cypress
+    container_name: cypress
+    depends_on:
+      - front
+    command: npx cypress run
+    working_dir: /app
+    network_mode: host
+    # environment:
+    #   - NODE_ENV=development
+    entrypoint: ['./node_modules/.bin/cypress']
+    volumes:
+      - node_modules:/app/node_modules
+      - ./:/app
 volumes:
   node_modules:
     driver_opts:

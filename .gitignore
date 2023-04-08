@@ -29,3 +29,5 @@ yarn-error.log*
 
 cypress/snapshots/actual/*
 cypress/snapshots/diff/*
+
+node_modules/
