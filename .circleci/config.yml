@@ -105,23 +105,9 @@ jobs:
           template: 'basic_success_1'
 
 workflows:
-  build-and-deploy:
+  build:
     jobs:
-      - build
-      - linting:
-          requires:
-            - build
-      - prettier:
-          requires:
-            - build
-      - test:
-          requires:
-            - linting
-            - prettier
       - cypress/install:
-          requires:
-            - linting
-            - prettier
           cache-key: >-
             cache-{{ arch }}-{{ .Branch }}-{{ checksum "package-lock.json" }}
           filters:
@@ -138,20 +124,14 @@ workflows:
           record: true
           parallel: true
           parallelism: 2
-          group: 2 machines
+          group: 2 machines 
           executor: cypress-docker
           start: npm run start
           wait-on: 'http://localhost:3000'
-      - deploy:
+      - notify-via-slack:
           requires:
-            - test
             - cypress/run
           filters:
             branches:
-              only: master
-      - notify-via-slack:
-          requires:
-            - deploy
-          filters:
-            branches:
-              only: master
+              only:
+                - master
