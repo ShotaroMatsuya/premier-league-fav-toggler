@@ -1,0 +1,45 @@
+version: '3.8'
+services:
+  front:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=development
+    tty: true
+    stdin_open: true
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/app
+      - node_modules:/app/node_modules
+  npm:
+    image: node:16-alpine
+    working_dir: /app
+    entrypoint: ['npm']
+    user: 'node:node'
+    volumes:
+      - ./:/app
+      - node_modules:/app/node_modules
+  cypress:
+    build:
+      context: ./cypress
+      dockerfile: Dockerfile.cypress
+    container_name: cypress
+    depends_on:
+      - front
+    command: npx cypress run
+    working_dir: /app
+    network_mode: host
+    # environment:
+    #   - NODE_ENV=development
+    entrypoint: ['./node_modules/.bin/cypress']
+    volumes:
+      - node_modules:/app/node_modules
+      - ./:/app
+volumes:
+  node_modules:
+    driver_opts:
+      type: none
+      device: ${PWD}/node_modules
+      o: bind
