@@ -27,3 +27,5 @@ yarn-error.log*
 .firebase
 .eslintcache
 
+cypress/snapshots/actual/*
+cypress/snapshots/diff/*
