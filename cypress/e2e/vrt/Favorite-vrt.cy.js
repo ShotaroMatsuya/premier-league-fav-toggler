@@ -45,6 +45,7 @@ describe('Favoritesページにアクセス(favoriteあり)', () => {
         cy.get('.main-header > nav > ul > :nth-child(2) > a').click();
       }
       checkURL('/favorites');
+      cy.get('.Loader').should('not.exist');
       cy.compareSnapshot(`Favoritesページ 全体 on ${screen}`, 0.05);
       // 攻撃スタッツ
       cy.get('.player-stats > :nth-child(3)').click();
