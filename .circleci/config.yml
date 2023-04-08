@@ -127,6 +127,7 @@ workflows:
           filters:
             branches:
               only: master
+          executor: cypress-docker
       - cypress/run:
           cache-key: >-
             cache-{{ arch }}-{{ .Branch }}-{{ checksum "package-lock.json" }}
@@ -139,7 +140,7 @@ workflows:
           parallel: true
           parallelism: 2
           group: 2 machines
-          executor: cypress-docker
+          # executor: cypress-docker
           start: npm run start
           wait-on: 'http://localhost:3000'
       - deploy:
