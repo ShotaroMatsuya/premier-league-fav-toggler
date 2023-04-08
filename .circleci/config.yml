@@ -9,7 +9,7 @@ executors:
   default:
     working_directory: ~/repo
     docker:
-      - image: circleci/node:16.13.0
+      - image: node:16-alpine
   slack-executor:
     docker:
       - image: 'cibuilds/base:latest'
@@ -26,15 +26,15 @@ jobs:
           command: echo ${CIRCLE_BRANCH}
       - restore_cache:
           keys:
-            - npm-{{ checksum "package.json" }}
+            - npm-{{ checksum "package-lock.json" }}
             - npm-
       - run:
           name: Install dependencies
-          command: npm install
+          command: npm ci
       - save_cache:
           paths:
             - node_modules
-          key: npm-{{ checksum "package.json" }}
+          key: npm-{{ checksum "package-lock.json" }}
   linting:
     executor: default
     steps:
@@ -44,7 +44,7 @@ jobs:
           command: echo ${CIRCLE_BRANCH}
       - restore_cache:
           keys:
-            - npm-{{ checksum "package.json" }}
+            - npm-{{ checksum "package-lock.json" }}
             - npm-
       - run:
           name: Run linting
@@ -58,7 +58,7 @@ jobs:
           command: echo ${CIRCLE_BRANCH}
       - restore_cache:
           keys:
-            - npm-{{ checksum "package.json" }}
+            - npm-{{ checksum "package-lock.json" }}
             - npm-
       - run:
           name: Run prettier check
@@ -72,7 +72,7 @@ jobs:
           command: echo ${CIRCLE_BRANCH}
       - restore_cache:
           keys:
-            - npm-{{ checksum "package.json" }}
+            - npm-{{ checksum "package-lock.json" }}
             - npm-
       - run:
           name: Run Component Test
