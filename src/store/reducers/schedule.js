@@ -1,7 +1,8 @@
 import {
+  CLEAR_MODAL,
+  FAILED_SC_FETCH,
   START_SC_FETCH,
-  SUCCESS_SC_FETCH,
-  FAILED_SC_FETCH
+  SUCCESS_SC_FETCH
 } from '../actions/schedule';
 
 const initState = {
@@ -22,6 +23,13 @@ const scheduleReducer = (state = initState, action) => {
         loading: false,
         error: true,
         schedule: action.payload
+      };
+    case CLEAR_MODAL:
+      return {
+        ...state,
+        loading: true,
+        error: false,
+        schedule: null
       };
     default:
       return state;

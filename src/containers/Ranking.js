@@ -1,17 +1,39 @@
 import React, { useEffect } from 'react';
 
 import { connect } from 'react-redux';
-import { initRanking } from '../store/actions/ranking';
+import Modal from '../components/UI/Modal';
+import { clearModal, initRanking } from '../store/actions/ranking';
 
 import Card from '../components/UI/Card';
 import Spinner from '../components/UI/Spinner';
 
 const Ranking = (props) => {
-  const { setRanking } = props;
+  const { setRanking, clearModal } = props;
   useEffect(() => {
     setRanking();
   }, [setRanking]);
   let rankingChart = null;
+
+  if (props.error) {
+    return (
+      <Modal show modalClosed={clearModal}>
+        <p
+          style={{
+            fontWeight: 'bold',
+            lineHeight: '2',
+            letterSpacing: '1.2px',
+            fontSize: '1.2rem'
+          }}
+          data-testid="error-modal"
+        >
+          リクエストに失敗しました。時間をおいて再度お試しください。
+          <br />
+          (APIが無料版なので不安定です🙇)
+        </p>
+      </Modal>
+    );
+  }
+
   if (props.ranking) {
     rankingChart = props.ranking.map((item, index) => {
       return (
@@ -69,7 +91,8 @@ const mapStateToProps = (state) => {
 };
 const mapDispatchToProps = (dispatch) => {
   return {
-    setRanking: () => dispatch(initRanking())
+    setRanking: () => dispatch(initRanking()),
+    clearModal: () => dispatch(clearModal())
   };
 };
 

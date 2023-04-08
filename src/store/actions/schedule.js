@@ -4,6 +4,7 @@ import axios from 'axios';
 export const START_SC_FETCH = 'START_SC_FETCH';
 export const SUCCESS_SC_FETCH = 'SUCCESS_SC_FETCH';
 export const FAILED_SC_FETCH = 'FAILED_SC_FETCH';
+export const CLEAR_MODAL = 'CLEAR_MODAL';
 // defined action creator
 const startScFetch = () => {
   return { type: START_SC_FETCH };
@@ -14,6 +15,16 @@ const successScFetch = (payload) => {
 const failedScFetch = (payload) => {
   return { type: FAILED_SC_FETCH, payload };
 };
+const clearErrorModal = (payload) => {
+  return { type: CLEAR_MODAL, payload };
+};
+
+export const clearModal = () => {
+  return (dispatch) => {
+    dispatch(clearErrorModal());
+  };
+};
+
 export const setSchedule = () => {
   return (dispatch) => {
     const headers = {
