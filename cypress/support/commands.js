@@ -52,3 +52,16 @@ Cypress.Commands.add('scheduleRequest', () => {
     }
   ).as('fetchedScheduleList');
 });
+
+Cypress.Commands.add('playersStatsRequest', () => {
+  cy.intercept(
+    {
+      method: 'GET',
+      url: `https://api-football-beta.p.rapidapi.com/players*`
+    },
+    {
+      statusCode: 200,
+      fixture: 'playersInfo'
+    }
+  );
+});
