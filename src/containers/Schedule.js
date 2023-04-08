@@ -1,13 +1,16 @@
 import React, { useEffect } from 'react';
 
-import { setSchedule } from '../store/actions/schedule';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { clearModal, setSchedule } from '../store/actions/schedule';
 
 import Card from '../components/UI/Card';
+import Modal from '../components/UI/Modal';
 import Spinner from '../components/UI/Spinner';
 
 const Schedule = (props) => {
   const schedule = useSelector((state) => state.schedule);
+  console.log(schedule);
+  console.log(schedule.error);
   const dispatch = useDispatch();
   const scheduleTable = [];
   let game_list = [];
@@ -19,6 +22,27 @@ const Schedule = (props) => {
   useEffect(() => {
     dispatch(setSchedule());
   }, [dispatch]);
+
+  if (schedule.error) {
+    return (
+      <Modal show modalClosed={() => dispatch(clearModal())}>
+        <p
+          style={{
+            fontWeight: 'bold',
+            lineHeight: '2',
+            letterSpacing: '1.2px',
+            fontSize: '1.2rem'
+          }}
+          data-testid="error-modal"
+        >
+          リクエストに失敗しました。時間をおいて再度お試しください。
+          <br />
+          (APIが無料版なので不安定です🙇)
+        </p>
+      </Modal>
+    );
+  }
+
   if (schedule.schedule !== null) {
     game_list = schedule.schedule.data.matches;
     games_num = schedule.schedule.data.count;

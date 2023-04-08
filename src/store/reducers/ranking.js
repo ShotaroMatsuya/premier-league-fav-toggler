@@ -1,4 +1,9 @@
-import { START_FETCH, SUCCESS_FETCH, FAILED_FETCH } from '../actions/ranking';
+import {
+  CLEAR_MODAL,
+  FAILED_FETCH,
+  START_FETCH,
+  SUCCESS_FETCH
+} from '../actions/ranking';
 
 const initialState = {
   payload: null,
@@ -17,6 +22,13 @@ const rankingReducer = (state = initialState, action) => {
         ...state,
         loading: false,
         error: true,
+        payload: action.payload
+      };
+    case CLEAR_MODAL:
+      return {
+        ...state,
+        loading: true,
+        error: false,
         payload: action.payload
       };
     default:

@@ -4,6 +4,7 @@ import axios from 'axios';
 export const START_FETCH = 'START_FETCH';
 export const SUCCESS_FETCH = 'SUCCESS_FETCH';
 export const FAILED_FETCH = 'FAILED_FETCH';
+export const CLEAR_MODAL = 'CLEAR_MODAL';
 // defined action creator
 const startFetch = () => {
   return {
@@ -19,6 +20,13 @@ const successFetch = (payload) => {
 const failedFetch = (payload) => {
   return {
     type: FAILED_FETCH,
+    payload
+  };
+};
+
+export const clearModal = (payload) => {
+  return {
+    type: CLEAR_MODAL,
     payload
   };
 };
