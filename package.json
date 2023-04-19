@@ -62,7 +62,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-standard": "^5.0.0",
-    "firebase-tools": "^11.24.1",
+    "firebase-tools": "^11.25.1",
     "mockdate": "^3.0.5",
     "msw": "^1.1.1",
     "playwright-webkit": "^1.32.1",
