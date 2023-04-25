@@ -65,7 +65,7 @@
     "firebase-tools": "^11.25.1",
     "mockdate": "^3.0.5",
     "msw": "^1.1.1",
-    "playwright-webkit": "^1.32.1",
+    "playwright-webkit": "^1.32.2",
     "prettier": "^2.8.6"
   }
 }
