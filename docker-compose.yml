@@ -12,15 +12,15 @@ services:
       - 3000:3000
     volumes:
       - ./:/app
-      - node_modules:/app/node_modules
+      - node_modules:/app/node_modules:delegated
   npm:
-    image: node:16-alpine
+    image: shotaromatsuya/premier-node:16
     working_dir: /app
     entrypoint: ['npm']
     user: 'node:node'
     volumes:
       - ./:/app
-      - node_modules:/app/node_modules
+      - node_modules:/app/node_modules:delegated
   cypress:
     build:
       context: ./cypress
@@ -35,7 +35,7 @@ services:
     #   - NODE_ENV=development
     entrypoint: ['./node_modules/.bin/cypress']
     volumes:
-      - node_modules:/app/node_modules
+      - node_modules:/app/node_modules:delegated
       - ./:/app
 volumes:
   node_modules:
