@@ -1,5 +1,5 @@
 orbs:
-  slack: circleci/slack@4.12.3
+  slack: circleci/slack@4.12.5
   cypress: cypress-io/cypress@2.2.0
 version: 2.1
 executors:
