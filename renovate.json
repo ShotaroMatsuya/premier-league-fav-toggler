@@ -3,22 +3,33 @@
   "extends": [
     "config:base"
   ],
+  "major": {
+    "enabled": false
+  },
   "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
     {
       "groupName": "firebase",
       "matchPackageNames": ["firebase-tools"],
       "matchPackagePrefixes": ["firebase"],
-      "matchUpdateTypes": ["minor"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
       "platformAutomerge": true,
     },
     {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchPackagePatterns": ["eslint"],
       "groupName": "eslint",
-      "matchPackageNames": ["@types/eslint", "babel-eslint"],
-      "matchPackagePrefixes": ["@typescript-eslint/", "eslint"],
-      "matchUpdateTypes": ["minor"],
-      "automerge": true,
-      "platformAutomerge": true,
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchPackagePatterns": ["prettier"],
+      "groupName": "prettier",
+      "automerge": true
     }
-  ]
+]
 }
