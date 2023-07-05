@@ -2,5 +2,23 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "groupName": "firebase",
+      "matchPackageNames": ["firebase-tools"],
+      "matchPackagePrefixes": ["firebase"],
+      "matchUpdateTypes": ["minor"],
+      "automerge": true,
+      "platformAutomerge": true,
+    },
+    {
+      "groupName": "eslint",
+      "matchPackageNames": ["@types/eslint", "babel-eslint"],
+      "matchPackagePrefixes": ["@typescript-eslint/", "eslint"],
+      "matchUpdateTypes": ["minor"],
+      "automerge": true,
+      "platformAutomerge": true,
+    }
   ]
 }
