@@ -15,7 +15,7 @@ Globals:
     Environment:
       Variables:
         X_AUTO_TOKEN: 'e33f64183747429f9f5c530192278530'
-        API_BASE_URL: 'https://api.football-data.org/v2/'
+        API_BASE_URL: 'https://api.football-data.org/v4/'
   Api:
     # CORS有効化
     Cors:
