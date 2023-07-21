@@ -47,7 +47,7 @@
     "@testing-library/react": "^12.1.5",
     "@testing-library/react-hooks": "^8.0.1",
     "@testing-library/user-event": "^14.4.3",
-    "cypress": "^12.8.1",
+    "cypress": "^12.17.1",
     "cypress-visual-regression": "^3.0.0",
     "eslint": "^8.37.0",
     "eslint-config-prettier": "^8.7.0",
