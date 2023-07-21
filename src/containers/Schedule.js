@@ -9,8 +9,6 @@ import Spinner from '../components/UI/Spinner';
 
 const Schedule = (props) => {
   const schedule = useSelector((state) => state.schedule);
-  console.log(schedule);
-  console.log(schedule.error);
   const dispatch = useDispatch();
   const scheduleTable = [];
   let game_list = [];
@@ -45,7 +43,25 @@ const Schedule = (props) => {
 
   if (schedule.schedule !== null) {
     game_list = schedule.schedule.data.matches;
-    games_num = schedule.schedule.data.count;
+    games_num = schedule.schedule.data.resultSet.count;
+
+    if (games_num === 0) {
+      return (
+        <Modal show modalClosed={() => dispatch(clearModal())}>
+          <p
+            style={{
+              fontWeight: 'bold',
+              lineHeight: '2',
+              letterSpacing: '1.2px',
+              fontSize: '1.2rem'
+            }}
+            data-testid="notfound-modal"
+          >
+            1週間以内に試合がありません。
+          </p>
+        </Modal>
+      );
+    }
 
     for (let i = 0; i < games_num; i++) {
       // 日時を日本時間に変換

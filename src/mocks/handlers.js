@@ -37,7 +37,7 @@ export const handlers = [
                     team: {
                       id: 57,
                       name: 'Arsenal FC',
-                      crestUrl: 'https://crests.football-data.org/57.png'
+                      crest: 'https://crests.football-data.org/57.png'
                     },
                     playedGames: 24,
                     form: null,
@@ -54,7 +54,7 @@ export const handlers = [
                     team: {
                       id: 65,
                       name: 'Manchester City FC',
-                      crestUrl: 'https://crests.football-data.org/65.png'
+                      crest: 'https://crests.football-data.org/65.png'
                     },
                     playedGames: 25,
                     form: null,
@@ -71,7 +71,7 @@ export const handlers = [
                     team: {
                       id: 66,
                       name: 'Manchester United FC',
-                      crestUrl: 'https://crests.football-data.org/66.png'
+                      crest: 'https://crests.football-data.org/66.png'
                     },
                     playedGames: 24,
                     form: null,
@@ -88,7 +88,7 @@ export const handlers = [
                     team: {
                       id: 73,
                       name: 'Tottenham Hotspur FC',
-                      crestUrl: 'https://crests.football-data.org/73.svg'
+                      crest: 'https://crests.football-data.org/73.svg'
                     },
                     playedGames: 25,
                     form: null,
@@ -105,7 +105,7 @@ export const handlers = [
                     team: {
                       id: 67,
                       name: 'Newcastle United FC',
-                      crestUrl: 'https://crests.football-data.org/67.png'
+                      crest: 'https://crests.football-data.org/67.png'
                     },
                     playedGames: 23,
                     form: null,
@@ -122,7 +122,7 @@ export const handlers = [
                     team: {
                       id: 63,
                       name: 'Fulham FC',
-                      crestUrl: 'https://crests.football-data.org/63.svg'
+                      crest: 'https://crests.football-data.org/63.svg'
                     },
                     playedGames: 25,
                     form: null,
@@ -139,7 +139,7 @@ export const handlers = [
                     team: {
                       id: 64,
                       name: 'Liverpool FC',
-                      crestUrl: 'https://crests.football-data.org/64.png'
+                      crest: 'https://crests.football-data.org/64.png'
                     },
                     playedGames: 23,
                     form: null,
@@ -156,7 +156,7 @@ export const handlers = [
                     team: {
                       id: 397,
                       name: 'Brighton & Hove Albion FC',
-                      crestUrl: 'https://crests.football-data.org/397.svg'
+                      crest: 'https://crests.football-data.org/397.svg'
                     },
                     playedGames: 22,
                     form: null,
@@ -173,7 +173,7 @@ export const handlers = [
                     team: {
                       id: 402,
                       name: 'Brentford FC',
-                      crestUrl: 'https://crests.football-data.org/402.png'
+                      crest: 'https://crests.football-data.org/402.png'
                     },
                     playedGames: 23,
                     form: null,
@@ -190,7 +190,7 @@ export const handlers = [
                     team: {
                       id: 61,
                       name: 'Chelsea FC',
-                      crestUrl: 'https://crests.football-data.org/61.png'
+                      crest: 'https://crests.football-data.org/61.png'
                     },
                     playedGames: 24,
                     form: null,
@@ -207,7 +207,7 @@ export const handlers = [
                     team: {
                       id: 58,
                       name: 'Aston Villa FC',
-                      crestUrl: 'https://crests.football-data.org/58.png'
+                      crest: 'https://crests.football-data.org/58.png'
                     },
                     playedGames: 24,
                     form: null,
@@ -224,7 +224,7 @@ export const handlers = [
                     team: {
                       id: 354,
                       name: 'Crystal Palace FC',
-                      crestUrl: 'https://crests.football-data.org/354.png'
+                      crest: 'https://crests.football-data.org/354.png'
                     },
                     playedGames: 24,
                     form: null,
@@ -241,7 +241,7 @@ export const handlers = [
                     team: {
                       id: 351,
                       name: 'Nottingham Forest FC',
-                      crestUrl: 'https://crests.football-data.org/351.png'
+                      crest: 'https://crests.football-data.org/351.png'
                     },
                     playedGames: 24,
                     form: null,
@@ -258,7 +258,7 @@ export const handlers = [
                     team: {
                       id: 338,
                       name: 'Leicester City FC',
-                      crestUrl: 'https://crests.football-data.org/338.png'
+                      crest: 'https://crests.football-data.org/338.png'
                     },
                     playedGames: 24,
                     form: null,
@@ -275,7 +275,7 @@ export const handlers = [
                     team: {
                       id: 76,
                       name: 'Wolverhampton Wanderers FC',
-                      crestUrl: 'https://crests.football-data.org/76.svg'
+                      crest: 'https://crests.football-data.org/76.svg'
                     },
                     playedGames: 24,
                     form: null,
@@ -292,7 +292,7 @@ export const handlers = [
                     team: {
                       id: 563,
                       name: 'West Ham United FC',
-                      crestUrl: 'https://crests.football-data.org/563.png'
+                      crest: 'https://crests.football-data.org/563.png'
                     },
                     playedGames: 24,
                     form: null,
@@ -309,7 +309,7 @@ export const handlers = [
                     team: {
                       id: 341,
                       name: 'Leeds United FC',
-                      crestUrl: 'https://crests.football-data.org/341.png'
+                      crest: 'https://crests.football-data.org/341.png'
                     },
                     playedGames: 24,
                     form: null,
@@ -326,7 +326,7 @@ export const handlers = [
                     team: {
                       id: 62,
                       name: 'Everton FC',
-                      crestUrl: 'https://crests.football-data.org/62.png'
+                      crest: 'https://crests.football-data.org/62.png'
                     },
                     playedGames: 24,
                     form: null,
@@ -343,7 +343,7 @@ export const handlers = [
                     team: {
                       id: 1044,
                       name: 'AFC Bournemouth',
-                      crestUrl: 'https://crests.football-data.org/1044.png'
+                      crest: 'https://crests.football-data.org/1044.png'
                     },
                     playedGames: 24,
                     form: null,
@@ -360,7 +360,7 @@ export const handlers = [
                     team: {
                       id: 340,
                       name: 'Southampton FC',
-                      crestUrl: 'https://crests.football-data.org/340.png'
+                      crest: 'https://crests.football-data.org/340.png'
                     },
                     playedGames: 24,
                     form: null,
@@ -389,397 +389,805 @@ export const handlers = [
       const dateTo = query.get('dateTo');
       if (
         status === 'SCHEDULED' &&
-        dateFrom === '2023-02-27' &&
-        dateTo === '2023-03-06'
+        dateFrom === '2023-08-27' &&
+        dateTo === '2023-09-03'
       ) {
         return res(
           ctx.json({
-            count: 12,
-            filters: { status: ['SCHEDULED'] },
+            filters: {
+              season: '2023',
+              status: ['SCHEDULED']
+            },
+            resultSet: {
+              count: 13,
+              first: '2023-08-27',
+              last: '2023-09-03',
+              played: 0
+            },
             competition: {
               id: 2021,
-              area: { id: 2072, name: 'England' },
               name: 'Premier League',
               code: 'PL',
-              plan: 'TIER_ONE',
-              lastUpdated: '2022-03-20T08:58:54Z'
+              type: 'LEAGUE',
+              emblem: 'https://crests.football-data.org/PL.png'
             },
             matches: [
               {
-                id: 416324,
-                season: {
-                  id: 1490,
-                  startDate: '2022-08-05',
-                  endDate: '2023-05-28',
-                  currentMatchday: 25
+                area: {
+                  id: 2072,
+                  name: 'England',
+                  code: 'ENG',
+                  flag: 'https://crests.football-data.org/770.svg'
                 },
-                utcDate: '2023-03-01T19:45:00Z',
-                status: 'SCHEDULED',
-                matchday: 7,
+                competition: {
+                  id: 2021,
+                  name: 'Premier League',
+                  code: 'PL',
+                  type: 'LEAGUE',
+                  emblem: 'https://crests.football-data.org/PL.png'
+                },
+                season: {
+                  id: 1564,
+                  startDate: '2023-08-11',
+                  endDate: '2024-05-19',
+                  currentMatchday: 1,
+                  winner: null
+                },
+                id: 435972,
+                utcDate: '2023-08-27T13:00:00Z',
+                status: 'TIMED',
+                matchday: 3,
                 stage: 'REGULAR_SEASON',
                 group: null,
-                lastUpdated: '2023-02-26T01:32:01Z',
-                odds: {
-                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                lastUpdated: '2023-07-14T16:20:20Z',
+                homeTeam: {
+                  id: 356,
+                  name: 'Sheffield United FC',
+                  shortName: 'Sheffield Utd',
+                  tla: 'SHE',
+                  crest: 'https://crests.football-data.org/356.svg'
+                },
+                awayTeam: {
+                  id: 65,
+                  name: 'Manchester City FC',
+                  shortName: 'Man City',
+                  tla: 'MCI',
+                  crest: 'https://crests.football-data.org/65.png'
                 },
                 score: {
                   winner: null,
                   duration: 'REGULAR',
-                  fullTime: { homeTeam: null, awayTeam: null },
-                  halfTime: { homeTeam: null, awayTeam: null },
-                  extraTime: { homeTeam: null, awayTeam: null },
-                  penalties: { homeTeam: null, awayTeam: null }
-                },
-                homeTeam: { id: 57, name: 'Arsenal FC' },
-                awayTeam: { id: 62, name: 'Everton FC' },
-                referees: [
-                  {
-                    id: 11430,
-                    name: 'Simon Hooper',
-                    role: 'REFEREE',
-                    nationality: 'England'
+                  fullTime: {
+                    home: null,
+                    away: null
                   },
-                  {
-                    id: 11605,
-                    name: 'Michael Oliver',
-                    role: 'REFEREE',
-                    nationality: 'England'
+                  halfTime: {
+                    home: null,
+                    away: null
                   }
-                ]
-              },
-              {
-                id: 416318,
-                season: {
-                  id: 1490,
-                  startDate: '2022-08-05',
-                  endDate: '2023-05-28',
-                  currentMatchday: 25
                 },
-                utcDate: '2023-03-01T20:00:00Z',
-                status: 'SCHEDULED',
-                matchday: 7,
-                stage: 'REGULAR_SEASON',
-                group: null,
-                lastUpdated: '2023-02-26T01:32:01Z',
                 odds: {
                   msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                },
+                referees: []
+              },
+              {
+                area: {
+                  id: 2072,
+                  name: 'England',
+                  code: 'ENG',
+                  flag: 'https://crests.football-data.org/770.svg'
+                },
+                competition: {
+                  id: 2021,
+                  name: 'Premier League',
+                  code: 'PL',
+                  type: 'LEAGUE',
+                  emblem: 'https://crests.football-data.org/PL.png'
+                },
+                season: {
+                  id: 1564,
+                  startDate: '2023-08-11',
+                  endDate: '2024-05-19',
+                  currentMatchday: 1,
+                  winner: null
+                },
+                id: 435967,
+                utcDate: '2023-08-27T13:00:00Z',
+                status: 'TIMED',
+                matchday: 3,
+                stage: 'REGULAR_SEASON',
+                group: null,
+                lastUpdated: '2023-07-14T16:20:20Z',
+                homeTeam: {
+                  id: 328,
+                  name: 'Burnley FC',
+                  shortName: 'Burnley',
+                  tla: 'BUR',
+                  crest: 'https://crests.football-data.org/328.png'
+                },
+                awayTeam: {
+                  id: 58,
+                  name: 'Aston Villa FC',
+                  shortName: 'Aston Villa',
+                  tla: 'AVL',
+                  crest: 'https://crests.football-data.org/58.png'
                 },
                 score: {
                   winner: null,
                   duration: 'REGULAR',
-                  fullTime: { homeTeam: null, awayTeam: null },
-                  halfTime: { homeTeam: null, awayTeam: null },
-                  extraTime: { homeTeam: null, awayTeam: null },
-                  penalties: { homeTeam: null, awayTeam: null }
-                },
-                homeTeam: { id: 64, name: 'Liverpool FC' },
-                awayTeam: { id: 76, name: 'Wolverhampton Wanderers FC' },
-                referees: [
-                  {
-                    id: 11423,
-                    name: 'Andy Madley',
-                    role: 'REFEREE',
-                    nationality: 'England'
+                  fullTime: {
+                    home: null,
+                    away: null
                   },
-                  {
-                    id: 11520,
-                    name: 'Paul Tierney',
-                    role: 'REFEREE',
-                    nationality: 'England'
+                  halfTime: {
+                    home: null,
+                    away: null
                   }
-                ]
-              },
-              {
-                id: 416128,
-                season: {
-                  id: 1490,
-                  startDate: '2022-08-05',
-                  endDate: '2023-05-28',
-                  currentMatchday: 25
                 },
-                utcDate: '2023-03-04T12:30:00Z',
-                status: 'SCHEDULED',
-                matchday: 26,
-                stage: 'REGULAR_SEASON',
-                group: null,
-                lastUpdated: '2023-02-26T01:32:02Z',
                 odds: {
                   msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
                 },
-                score: {
-                  winner: null,
-                  duration: 'REGULAR',
-                  fullTime: { homeTeam: null, awayTeam: null },
-                  halfTime: { homeTeam: null, awayTeam: null },
-                  extraTime: { homeTeam: null, awayTeam: null },
-                  penalties: { homeTeam: null, awayTeam: null }
-                },
-                homeTeam: { id: 65, name: 'Manchester City FC' },
-                awayTeam: { id: 67, name: 'Newcastle United FC' },
                 referees: []
               },
               {
-                id: 416125,
-                season: {
-                  id: 1490,
-                  startDate: '2022-08-05',
-                  endDate: '2023-05-28',
-                  currentMatchday: 25
+                area: {
+                  id: 2072,
+                  name: 'England',
+                  code: 'ENG',
+                  flag: 'https://crests.football-data.org/770.svg'
                 },
-                utcDate: '2023-03-04T15:00:00Z',
-                status: 'SCHEDULED',
-                matchday: 26,
+                competition: {
+                  id: 2021,
+                  name: 'Premier League',
+                  code: 'PL',
+                  type: 'LEAGUE',
+                  emblem: 'https://crests.football-data.org/PL.png'
+                },
+                season: {
+                  id: 1564,
+                  startDate: '2023-08-11',
+                  endDate: '2024-05-19',
+                  currentMatchday: 1,
+                  winner: null
+                },
+                id: 435971,
+                utcDate: '2023-08-27T15:30:00Z',
+                status: 'TIMED',
+                matchday: 3,
                 stage: 'REGULAR_SEASON',
                 group: null,
-                lastUpdated: '2023-02-26T01:32:02Z',
-                odds: {
-                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                lastUpdated: '2023-07-14T16:20:20Z',
+                homeTeam: {
+                  id: 67,
+                  name: 'Newcastle United FC',
+                  shortName: 'Newcastle',
+                  tla: 'NEW',
+                  crest: 'https://crests.football-data.org/67.png'
+                },
+                awayTeam: {
+                  id: 64,
+                  name: 'Liverpool FC',
+                  shortName: 'Liverpool',
+                  tla: 'LIV',
+                  crest: 'https://crests.football-data.org/64.png'
                 },
                 score: {
                   winner: null,
                   duration: 'REGULAR',
-                  fullTime: { homeTeam: null, awayTeam: null },
-                  halfTime: { homeTeam: null, awayTeam: null },
-                  extraTime: { homeTeam: null, awayTeam: null },
-                  penalties: { homeTeam: null, awayTeam: null }
+                  fullTime: {
+                    home: null,
+                    away: null
+                  },
+                  halfTime: {
+                    home: null,
+                    away: null
+                  }
                 },
-                homeTeam: { id: 76, name: 'Wolverhampton Wanderers FC' },
-                awayTeam: { id: 73, name: 'Tottenham Hotspur FC' },
+                odds: {
+                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                },
                 referees: []
               },
               {
-                id: 416130,
-                season: {
-                  id: 1490,
-                  startDate: '2022-08-05',
-                  endDate: '2023-05-28',
-                  currentMatchday: 25
+                area: {
+                  id: 2072,
+                  name: 'England',
+                  code: 'ENG',
+                  flag: 'https://crests.football-data.org/770.svg'
                 },
-                utcDate: '2023-03-04T15:00:00Z',
-                status: 'SCHEDULED',
-                matchday: 26,
+                competition: {
+                  id: 2021,
+                  name: 'Premier League',
+                  code: 'PL',
+                  type: 'LEAGUE',
+                  emblem: 'https://crests.football-data.org/PL.png'
+                },
+                season: {
+                  id: 1564,
+                  startDate: '2023-08-11',
+                  endDate: '2024-05-19',
+                  currentMatchday: 1,
+                  winner: null
+                },
+                id: 435980,
+                utcDate: '2023-09-01T19:00:00Z',
+                status: 'TIMED',
+                matchday: 4,
                 stage: 'REGULAR_SEASON',
                 group: null,
-                lastUpdated: '2023-02-26T01:32:02Z',
-                odds: {
-                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                lastUpdated: '2023-07-14T16:20:20Z',
+                homeTeam: {
+                  id: 389,
+                  name: 'Luton Town FC',
+                  shortName: 'Luton Town',
+                  tla: 'LUT',
+                  crest: 'https://crests.football-data.org/389.png'
+                },
+                awayTeam: {
+                  id: 563,
+                  name: 'West Ham United FC',
+                  shortName: 'West Ham',
+                  tla: 'WHU',
+                  crest: 'https://crests.football-data.org/563.png'
                 },
                 score: {
                   winner: null,
                   duration: 'REGULAR',
-                  fullTime: { homeTeam: null, awayTeam: null },
-                  halfTime: { homeTeam: null, awayTeam: null },
-                  extraTime: { homeTeam: null, awayTeam: null },
-                  penalties: { homeTeam: null, awayTeam: null }
+                  fullTime: {
+                    home: null,
+                    away: null
+                  },
+                  halfTime: {
+                    home: null,
+                    away: null
+                  }
                 },
-                homeTeam: { id: 61, name: 'Chelsea FC' },
-                awayTeam: { id: 341, name: 'Leeds United FC' },
+                odds: {
+                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                },
                 referees: []
               },
               {
-                id: 416131,
-                season: {
-                  id: 1490,
-                  startDate: '2022-08-05',
-                  endDate: '2023-05-28',
-                  currentMatchday: 25
+                area: {
+                  id: 2072,
+                  name: 'England',
+                  code: 'ENG',
+                  flag: 'https://crests.football-data.org/770.svg'
                 },
-                utcDate: '2023-03-04T15:00:00Z',
-                status: 'SCHEDULED',
-                matchday: 26,
+                competition: {
+                  id: 2021,
+                  name: 'Premier League',
+                  code: 'PL',
+                  type: 'LEAGUE',
+                  emblem: 'https://crests.football-data.org/PL.png'
+                },
+                season: {
+                  id: 1564,
+                  startDate: '2023-08-11',
+                  endDate: '2024-05-19',
+                  currentMatchday: 1,
+                  winner: null
+                },
+                id: 435982,
+                utcDate: '2023-09-02T11:30:00Z',
+                status: 'TIMED',
+                matchday: 4,
                 stage: 'REGULAR_SEASON',
                 group: null,
-                lastUpdated: '2023-02-26T01:32:02Z',
-                odds: {
-                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                lastUpdated: '2023-07-14T16:20:20Z',
+                homeTeam: {
+                  id: 356,
+                  name: 'Sheffield United FC',
+                  shortName: 'Sheffield Utd',
+                  tla: 'SHE',
+                  crest: 'https://crests.football-data.org/356.svg'
+                },
+                awayTeam: {
+                  id: 62,
+                  name: 'Everton FC',
+                  shortName: 'Everton',
+                  tla: 'EVE',
+                  crest: 'https://crests.football-data.org/62.png'
                 },
                 score: {
                   winner: null,
                   duration: 'REGULAR',
-                  fullTime: { homeTeam: null, awayTeam: null },
-                  halfTime: { homeTeam: null, awayTeam: null },
-                  extraTime: { homeTeam: null, awayTeam: null },
-                  penalties: { homeTeam: null, awayTeam: null }
+                  fullTime: {
+                    home: null,
+                    away: null
+                  },
+                  halfTime: {
+                    home: null,
+                    away: null
+                  }
                 },
-                homeTeam: { id: 397, name: 'Brighton & Hove Albion FC' },
-                awayTeam: { id: 563, name: 'West Ham United FC' },
+                odds: {
+                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                },
                 referees: []
               },
               {
-                id: 416133,
-                season: {
-                  id: 1490,
-                  startDate: '2022-08-05',
-                  endDate: '2023-05-28',
-                  currentMatchday: 25
+                area: {
+                  id: 2072,
+                  name: 'England',
+                  code: 'ENG',
+                  flag: 'https://crests.football-data.org/770.svg'
                 },
-                utcDate: '2023-03-04T15:00:00Z',
-                status: 'SCHEDULED',
-                matchday: 26,
+                competition: {
+                  id: 2021,
+                  name: 'Premier League',
+                  code: 'PL',
+                  type: 'LEAGUE',
+                  emblem: 'https://crests.football-data.org/PL.png'
+                },
+                season: {
+                  id: 1564,
+                  startDate: '2023-08-11',
+                  endDate: '2024-05-19',
+                  currentMatchday: 1,
+                  winner: null
+                },
+                id: 435974,
+                utcDate: '2023-09-02T14:00:00Z',
+                status: 'TIMED',
+                matchday: 4,
                 stage: 'REGULAR_SEASON',
                 group: null,
-                lastUpdated: '2023-02-26T01:32:02Z',
-                odds: {
-                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                lastUpdated: '2023-07-14T16:20:20Z',
+                homeTeam: {
+                  id: 402,
+                  name: 'Brentford FC',
+                  shortName: 'Brentford',
+                  tla: 'BRE',
+                  crest: 'https://crests.football-data.org/402.png'
+                },
+                awayTeam: {
+                  id: 1044,
+                  name: 'AFC Bournemouth',
+                  shortName: 'Bournemouth',
+                  tla: 'BOU',
+                  crest: 'https://crests.football-data.org/1044.png'
                 },
                 score: {
                   winner: null,
                   duration: 'REGULAR',
-                  fullTime: { homeTeam: null, awayTeam: null },
-                  halfTime: { homeTeam: null, awayTeam: null },
-                  extraTime: { homeTeam: null, awayTeam: null },
-                  penalties: { homeTeam: null, awayTeam: null }
+                  fullTime: {
+                    home: null,
+                    away: null
+                  },
+                  halfTime: {
+                    home: null,
+                    away: null
+                  }
                 },
-                homeTeam: { id: 58, name: 'Aston Villa FC' },
-                awayTeam: { id: 354, name: 'Crystal Palace FC' },
+                odds: {
+                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                },
                 referees: []
               },
               {
-                id: 416134,
-                season: {
-                  id: 1490,
-                  startDate: '2022-08-05',
-                  endDate: '2023-05-28',
-                  currentMatchday: 25
+                area: {
+                  id: 2072,
+                  name: 'England',
+                  code: 'ENG',
+                  flag: 'https://crests.football-data.org/770.svg'
                 },
-                utcDate: '2023-03-04T15:00:00Z',
-                status: 'SCHEDULED',
-                matchday: 26,
+                competition: {
+                  id: 2021,
+                  name: 'Premier League',
+                  code: 'PL',
+                  type: 'LEAGUE',
+                  emblem: 'https://crests.football-data.org/PL.png'
+                },
+                season: {
+                  id: 1564,
+                  startDate: '2023-08-11',
+                  endDate: '2024-05-19',
+                  currentMatchday: 1,
+                  winner: null
+                },
+                id: 435976,
+                utcDate: '2023-09-02T14:00:00Z',
+                status: 'TIMED',
+                matchday: 4,
                 stage: 'REGULAR_SEASON',
                 group: null,
-                lastUpdated: '2023-02-26T01:32:02Z',
-                odds: {
-                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                lastUpdated: '2023-07-14T16:20:20Z',
+                homeTeam: {
+                  id: 328,
+                  name: 'Burnley FC',
+                  shortName: 'Burnley',
+                  tla: 'BUR',
+                  crest: 'https://crests.football-data.org/328.png'
+                },
+                awayTeam: {
+                  id: 73,
+                  name: 'Tottenham Hotspur FC',
+                  shortName: 'Tottenham',
+                  tla: 'TOT',
+                  crest: 'https://crests.football-data.org/73.svg'
                 },
                 score: {
                   winner: null,
                   duration: 'REGULAR',
-                  fullTime: { homeTeam: null, awayTeam: null },
-                  halfTime: { homeTeam: null, awayTeam: null },
-                  extraTime: { homeTeam: null, awayTeam: null },
-                  penalties: { homeTeam: null, awayTeam: null }
+                  fullTime: {
+                    home: null,
+                    away: null
+                  },
+                  halfTime: {
+                    home: null,
+                    away: null
+                  }
                 },
-                homeTeam: { id: 57, name: 'Arsenal FC' },
-                awayTeam: { id: 1044, name: 'AFC Bournemouth' },
+                odds: {
+                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                },
                 referees: []
               },
               {
-                id: 416126,
-                season: {
-                  id: 1490,
-                  startDate: '2022-08-05',
-                  endDate: '2023-05-28',
-                  currentMatchday: 25
+                area: {
+                  id: 2072,
+                  name: 'England',
+                  code: 'ENG',
+                  flag: 'https://crests.football-data.org/770.svg'
                 },
-                utcDate: '2023-03-04T17:30:00Z',
-                status: 'SCHEDULED',
-                matchday: 26,
+                competition: {
+                  id: 2021,
+                  name: 'Premier League',
+                  code: 'PL',
+                  type: 'LEAGUE',
+                  emblem: 'https://crests.football-data.org/PL.png'
+                },
+                season: {
+                  id: 1564,
+                  startDate: '2023-08-11',
+                  endDate: '2024-05-19',
+                  currentMatchday: 1,
+                  winner: null
+                },
+                id: 435977,
+                utcDate: '2023-09-02T14:00:00Z',
+                status: 'TIMED',
+                matchday: 4,
                 stage: 'REGULAR_SEASON',
                 group: null,
-                lastUpdated: '2023-02-26T01:32:02Z',
-                odds: {
-                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                lastUpdated: '2023-07-14T16:20:20Z',
+                homeTeam: {
+                  id: 61,
+                  name: 'Chelsea FC',
+                  shortName: 'Chelsea',
+                  tla: 'CHE',
+                  crest: 'https://crests.football-data.org/61.png'
+                },
+                awayTeam: {
+                  id: 351,
+                  name: 'Nottingham Forest FC',
+                  shortName: 'Nottingham',
+                  tla: 'NOT',
+                  crest: 'https://crests.football-data.org/351.png'
                 },
                 score: {
                   winner: null,
                   duration: 'REGULAR',
-                  fullTime: { homeTeam: null, awayTeam: null },
-                  halfTime: { homeTeam: null, awayTeam: null },
-                  extraTime: { homeTeam: null, awayTeam: null },
-                  penalties: { homeTeam: null, awayTeam: null }
+                  fullTime: {
+                    home: null,
+                    away: null
+                  },
+                  halfTime: {
+                    home: null,
+                    away: null
+                  }
                 },
-                homeTeam: { id: 340, name: 'Southampton FC' },
-                awayTeam: { id: 338, name: 'Leicester City FC' },
+                odds: {
+                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                },
                 referees: []
               },
               {
-                id: 416127,
-                season: {
-                  id: 1490,
-                  startDate: '2022-08-05',
-                  endDate: '2023-05-28',
-                  currentMatchday: 25
+                area: {
+                  id: 2072,
+                  name: 'England',
+                  code: 'ENG',
+                  flag: 'https://crests.football-data.org/770.svg'
                 },
-                utcDate: '2023-03-05T14:00:00Z',
-                status: 'SCHEDULED',
-                matchday: 26,
+                competition: {
+                  id: 2021,
+                  name: 'Premier League',
+                  code: 'PL',
+                  type: 'LEAGUE',
+                  emblem: 'https://crests.football-data.org/PL.png'
+                },
+                season: {
+                  id: 1564,
+                  startDate: '2023-08-11',
+                  endDate: '2024-05-19',
+                  currentMatchday: 1,
+                  winner: null
+                },
+                id: 435981,
+                utcDate: '2023-09-02T14:00:00Z',
+                status: 'TIMED',
+                matchday: 4,
                 stage: 'REGULAR_SEASON',
                 group: null,
-                lastUpdated: '2023-01-25T16:20:19Z',
-                odds: {
-                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                lastUpdated: '2023-07-14T16:20:21Z',
+                homeTeam: {
+                  id: 65,
+                  name: 'Manchester City FC',
+                  shortName: 'Man City',
+                  tla: 'MCI',
+                  crest: 'https://crests.football-data.org/65.png'
+                },
+                awayTeam: {
+                  id: 63,
+                  name: 'Fulham FC',
+                  shortName: 'Fulham',
+                  tla: 'FUL',
+                  crest: 'https://crests.football-data.org/63.svg'
                 },
                 score: {
                   winner: null,
                   duration: 'REGULAR',
-                  fullTime: { homeTeam: null, awayTeam: null },
-                  halfTime: { homeTeam: null, awayTeam: null },
-                  extraTime: { homeTeam: null, awayTeam: null },
-                  penalties: { homeTeam: null, awayTeam: null }
+                  fullTime: {
+                    home: null,
+                    away: null
+                  },
+                  halfTime: {
+                    home: null,
+                    away: null
+                  }
                 },
-                homeTeam: { id: 351, name: 'Nottingham Forest FC' },
-                awayTeam: { id: 62, name: 'Everton FC' },
+                odds: {
+                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                },
                 referees: []
               },
               {
-                id: 416129,
-                season: {
-                  id: 1490,
-                  startDate: '2022-08-05',
-                  endDate: '2023-05-28',
-                  currentMatchday: 25
+                area: {
+                  id: 2072,
+                  name: 'England',
+                  code: 'ENG',
+                  flag: 'https://crests.football-data.org/770.svg'
                 },
-                utcDate: '2023-03-05T16:30:00Z',
-                status: 'SCHEDULED',
-                matchday: 26,
+                competition: {
+                  id: 2021,
+                  name: 'Premier League',
+                  code: 'PL',
+                  type: 'LEAGUE',
+                  emblem: 'https://crests.football-data.org/PL.png'
+                },
+                season: {
+                  id: 1564,
+                  startDate: '2023-08-11',
+                  endDate: '2024-05-19',
+                  currentMatchday: 1,
+                  winner: null
+                },
+                id: 435975,
+                utcDate: '2023-09-02T16:30:00Z',
+                status: 'TIMED',
+                matchday: 4,
                 stage: 'REGULAR_SEASON',
                 group: null,
-                lastUpdated: '2023-01-25T16:20:19Z',
-                odds: {
-                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                lastUpdated: '2023-07-14T16:20:21Z',
+                homeTeam: {
+                  id: 397,
+                  name: 'Brighton & Hove Albion FC',
+                  shortName: 'Brighton Hove',
+                  tla: 'BHA',
+                  crest: 'https://crests.football-data.org/397.svg'
+                },
+                awayTeam: {
+                  id: 67,
+                  name: 'Newcastle United FC',
+                  shortName: 'Newcastle',
+                  tla: 'NEW',
+                  crest: 'https://crests.football-data.org/67.png'
                 },
                 score: {
                   winner: null,
                   duration: 'REGULAR',
-                  fullTime: { homeTeam: null, awayTeam: null },
-                  halfTime: { homeTeam: null, awayTeam: null },
-                  extraTime: { homeTeam: null, awayTeam: null },
-                  penalties: { homeTeam: null, awayTeam: null }
+                  fullTime: {
+                    home: null,
+                    away: null
+                  },
+                  halfTime: {
+                    home: null,
+                    away: null
+                  }
                 },
-                homeTeam: { id: 64, name: 'Liverpool FC' },
-                awayTeam: { id: 66, name: 'Manchester United FC' },
+                odds: {
+                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                },
                 referees: []
               },
               {
-                id: 416132,
-                season: {
-                  id: 1490,
-                  startDate: '2022-08-05',
-                  endDate: '2023-05-28',
-                  currentMatchday: 25
+                area: {
+                  id: 2072,
+                  name: 'England',
+                  code: 'ENG',
+                  flag: 'https://crests.football-data.org/770.svg'
                 },
-                utcDate: '2023-03-06T20:00:00Z',
-                status: 'SCHEDULED',
-                matchday: 26,
+                competition: {
+                  id: 2021,
+                  name: 'Premier League',
+                  code: 'PL',
+                  type: 'LEAGUE',
+                  emblem: 'https://crests.football-data.org/PL.png'
+                },
+                season: {
+                  id: 1564,
+                  startDate: '2023-08-11',
+                  endDate: '2024-05-19',
+                  currentMatchday: 1,
+                  winner: null
+                },
+                id: 435978,
+                utcDate: '2023-09-03T13:00:00Z',
+                status: 'TIMED',
+                matchday: 4,
                 stage: 'REGULAR_SEASON',
                 group: null,
-                lastUpdated: '2023-01-25T16:20:19Z',
-                odds: {
-                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                lastUpdated: '2023-07-14T16:20:21Z',
+                homeTeam: {
+                  id: 354,
+                  name: 'Crystal Palace FC',
+                  shortName: 'Crystal Palace',
+                  tla: 'CRY',
+                  crest: 'https://crests.football-data.org/354.png'
+                },
+                awayTeam: {
+                  id: 76,
+                  name: 'Wolverhampton Wanderers FC',
+                  shortName: 'Wolverhampton',
+                  tla: 'WOL',
+                  crest: 'https://crests.football-data.org/76.svg'
                 },
                 score: {
                   winner: null,
                   duration: 'REGULAR',
-                  fullTime: { homeTeam: null, awayTeam: null },
-                  halfTime: { homeTeam: null, awayTeam: null },
-                  extraTime: { homeTeam: null, awayTeam: null },
-                  penalties: { homeTeam: null, awayTeam: null }
+                  fullTime: {
+                    home: null,
+                    away: null
+                  },
+                  halfTime: {
+                    home: null,
+                    away: null
+                  }
                 },
-                homeTeam: { id: 402, name: 'Brentford FC' },
-                awayTeam: { id: 63, name: 'Fulham FC' },
+                odds: {
+                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                },
+                referees: []
+              },
+              {
+                area: {
+                  id: 2072,
+                  name: 'England',
+                  code: 'ENG',
+                  flag: 'https://crests.football-data.org/770.svg'
+                },
+                competition: {
+                  id: 2021,
+                  name: 'Premier League',
+                  code: 'PL',
+                  type: 'LEAGUE',
+                  emblem: 'https://crests.football-data.org/PL.png'
+                },
+                season: {
+                  id: 1564,
+                  startDate: '2023-08-11',
+                  endDate: '2024-05-19',
+                  currentMatchday: 1,
+                  winner: null
+                },
+                id: 435979,
+                utcDate: '2023-09-03T13:00:00Z',
+                status: 'TIMED',
+                matchday: 4,
+                stage: 'REGULAR_SEASON',
+                group: null,
+                lastUpdated: '2023-07-14T16:20:21Z',
+                homeTeam: {
+                  id: 64,
+                  name: 'Liverpool FC',
+                  shortName: 'Liverpool',
+                  tla: 'LIV',
+                  crest: 'https://crests.football-data.org/64.png'
+                },
+                awayTeam: {
+                  id: 58,
+                  name: 'Aston Villa FC',
+                  shortName: 'Aston Villa',
+                  tla: 'AVL',
+                  crest: 'https://crests.football-data.org/58.png'
+                },
+                score: {
+                  winner: null,
+                  duration: 'REGULAR',
+                  fullTime: {
+                    home: null,
+                    away: null
+                  },
+                  halfTime: {
+                    home: null,
+                    away: null
+                  }
+                },
+                odds: {
+                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                },
+                referees: []
+              },
+              {
+                area: {
+                  id: 2072,
+                  name: 'England',
+                  code: 'ENG',
+                  flag: 'https://crests.football-data.org/770.svg'
+                },
+                competition: {
+                  id: 2021,
+                  name: 'Premier League',
+                  code: 'PL',
+                  type: 'LEAGUE',
+                  emblem: 'https://crests.football-data.org/PL.png'
+                },
+                season: {
+                  id: 1564,
+                  startDate: '2023-08-11',
+                  endDate: '2024-05-19',
+                  currentMatchday: 1,
+                  winner: null
+                },
+                id: 435973,
+                utcDate: '2023-09-03T15:30:00Z',
+                status: 'TIMED',
+                matchday: 4,
+                stage: 'REGULAR_SEASON',
+                group: null,
+                lastUpdated: '2023-07-14T16:20:21Z',
+                homeTeam: {
+                  id: 57,
+                  name: 'Arsenal FC',
+                  shortName: 'Arsenal',
+                  tla: 'ARS',
+                  crest: 'https://crests.football-data.org/57.png'
+                },
+                awayTeam: {
+                  id: 66,
+                  name: 'Manchester United FC',
+                  shortName: 'Man United',
+                  tla: 'MUN',
+                  crest: 'https://crests.football-data.org/66.png'
+                },
+                score: {
+                  winner: null,
+                  duration: 'REGULAR',
+                  fullTime: {
+                    home: null,
+                    away: null
+                  },
+                  halfTime: {
+                    home: null,
+                    away: null
+                  }
+                },
+                odds: {
+                  msg: 'Activate Odds-Package in User-Panel to retrieve odds.'
+                },
                 referees: []
               }
             ]
+          })
+        );
+      } else {
+        return res(
+          ctx.json({
+            resultSet: {
+              count: 0
+            }
           })
         );
       }

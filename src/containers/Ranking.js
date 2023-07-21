@@ -42,7 +42,7 @@ const Ranking = (props) => {
           <td>
             <div style={{ textAlign: 'left' }}>
               <div style={{ display: 'table-cell', verticalAlign: 'middle' }}>
-                <img src={item.team.crestUrl} height="24" alt="emblem" />
+                <img src={item.team.crest} height="24" alt="emblem" />
               </div>
               <div style={{ display: 'table-cell', verticalAlign: 'middle' }}>
                 {item.team.name}

@@ -26,7 +26,7 @@
           "team": {
             "id": 57,
             "name": "Arsenal FC",
-            "crestUrl": "https://crests.football-data.org/57.png"
+            "crest": "https://crests.football-data.org/57.png"
           },
           "playedGames": 29,
           "form": null,
@@ -43,7 +43,7 @@
           "team": {
             "id": 65,
             "name": "Manchester City FC",
-            "crestUrl": "https://crests.football-data.org/65.png"
+            "crest": "https://crests.football-data.org/65.png"
           },
           "playedGames": 28,
           "form": null,
@@ -60,7 +60,7 @@
           "team": {
             "id": 67,
             "name": "Newcastle United FC",
-            "crestUrl": "https://crests.football-data.org/67.png"
+            "crest": "https://crests.football-data.org/67.png"
           },
           "playedGames": 28,
           "form": null,
@@ -77,7 +77,7 @@
           "team": {
             "id": 66,
             "name": "Manchester United FC",
-            "crestUrl": "https://crests.football-data.org/66.png"
+            "crest": "https://crests.football-data.org/66.png"
           },
           "playedGames": 28,
           "form": null,
@@ -94,7 +94,7 @@
           "team": {
             "id": 73,
             "name": "Tottenham Hotspur FC",
-            "crestUrl": "https://crests.football-data.org/73.svg"
+            "crest": "https://crests.football-data.org/73.svg"
           },
           "playedGames": 29,
           "form": null,
@@ -111,7 +111,7 @@
           "team": {
             "id": 397,
             "name": "Brighton & Hove Albion FC",
-            "crestUrl": "https://crests.football-data.org/397.svg"
+            "crest": "https://crests.football-data.org/397.svg"
           },
           "playedGames": 27,
           "form": null,
@@ -128,7 +128,7 @@
           "team": {
             "id": 58,
             "name": "Aston Villa FC",
-            "crestUrl": "https://crests.football-data.org/58.png"
+            "crest": "https://crests.football-data.org/58.png"
           },
           "playedGames": 29,
           "form": null,
@@ -145,7 +145,7 @@
           "team": {
             "id": 64,
             "name": "Liverpool FC",
-            "crestUrl": "https://crests.football-data.org/64.png"
+            "crest": "https://crests.football-data.org/64.png"
           },
           "playedGames": 28,
           "form": null,
@@ -162,7 +162,7 @@
           "team": {
             "id": 402,
             "name": "Brentford FC",
-            "crestUrl": "https://crests.football-data.org/402.png"
+            "crest": "https://crests.football-data.org/402.png"
           },
           "playedGames": 29,
           "form": null,
@@ -179,7 +179,7 @@
           "team": {
             "id": 63,
             "name": "Fulham FC",
-            "crestUrl": "https://crests.football-data.org/63.svg"
+            "crest": "https://crests.football-data.org/63.svg"
           },
           "playedGames": 28,
           "form": null,
@@ -196,7 +196,7 @@
           "team": {
             "id": 61,
             "name": "Chelsea FC",
-            "crestUrl": "https://crests.football-data.org/61.png"
+            "crest": "https://crests.football-data.org/61.png"
           },
           "playedGames": 29,
           "form": null,
@@ -213,7 +213,7 @@
           "team": {
             "id": 354,
             "name": "Crystal Palace FC",
-            "crestUrl": "https://crests.football-data.org/354.png"
+            "crest": "https://crests.football-data.org/354.png"
           },
           "playedGames": 29,
           "form": null,
@@ -230,7 +230,7 @@
           "team": {
             "id": 341,
             "name": "Leeds United FC",
-            "crestUrl": "https://crests.football-data.org/341.png"
+            "crest": "https://crests.football-data.org/341.png"
           },
           "playedGames": 29,
           "form": null,
@@ -247,7 +247,7 @@
           "team": {
             "id": 76,
             "name": "Wolverhampton Wanderers FC",
-            "crestUrl": "https://crests.football-data.org/76.svg"
+            "crest": "https://crests.football-data.org/76.svg"
           },
           "playedGames": 29,
           "form": null,
@@ -264,7 +264,7 @@
           "team": {
             "id": 563,
             "name": "West Ham United FC",
-            "crestUrl": "https://crests.football-data.org/563.png"
+            "crest": "https://crests.football-data.org/563.png"
           },
           "playedGames": 28,
           "form": null,
@@ -281,7 +281,7 @@
           "team": {
             "id": 62,
             "name": "Everton FC",
-            "crestUrl": "https://crests.football-data.org/62.png"
+            "crest": "https://crests.football-data.org/62.png"
           },
           "playedGames": 29,
           "form": null,
@@ -298,7 +298,7 @@
           "team": {
             "id": 351,
             "name": "Nottingham Forest FC",
-            "crestUrl": "https://crests.football-data.org/351.png"
+            "crest": "https://crests.football-data.org/351.png"
           },
           "playedGames": 29,
           "form": null,
@@ -315,7 +315,7 @@
           "team": {
             "id": 1044,
             "name": "AFC Bournemouth",
-            "crestUrl": "https://crests.football-data.org/1044.png"
+            "crest": "https://crests.football-data.org/1044.png"
           },
           "playedGames": 29,
           "form": null,
@@ -332,7 +332,7 @@
           "team": {
             "id": 338,
             "name": "Leicester City FC",
-            "crestUrl": "https://crests.football-data.org/338.png"
+            "crest": "https://crests.football-data.org/338.png"
           },
           "playedGames": 29,
           "form": null,
@@ -349,7 +349,7 @@
           "team": {
             "id": 340,
             "name": "Southampton FC",
-            "crestUrl": "https://crests.football-data.org/340.png"
+            "crest": "https://crests.football-data.org/340.png"
           },
           "playedGames": 29,
           "form": null,

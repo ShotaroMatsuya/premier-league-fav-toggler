@@ -1,6 +1,9 @@
 {
-  "count": 17,
   "filters": { "status": ["SCHEDULED"] },
+  "resultSet": {
+    "count": 17,
+    "played": 0
+  },
   "competition": {
     "id": 2021,
     "area": { "id": 2072, "name": "England" },
