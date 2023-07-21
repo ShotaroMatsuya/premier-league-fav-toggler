@@ -45,6 +45,24 @@ const Schedule = (props) => {
     game_list = schedule.schedule.data.matches;
     games_num = schedule.schedule.data.resultSet.count;
 
+    if (games_num === 0) {
+      return (
+        <Modal show modalClosed={() => dispatch(clearModal())}>
+          <p
+            style={{
+              fontWeight: 'bold',
+              lineHeight: '2',
+              letterSpacing: '1.2px',
+              fontSize: '1.2rem'
+            }}
+            data-testid="notfound-modal"
+          >
+            1週間以内に試合がありません。
+          </p>
+        </Modal>
+      );
+    }
+
     for (let i = 0; i < games_num; i++) {
       // 日時を日本時間に変換
       date = new Date(game_list[i].utcDate);
