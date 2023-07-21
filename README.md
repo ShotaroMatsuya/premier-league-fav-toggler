@@ -1,5 +1,5 @@
 # Premier League Fav Toggler
-![Version](https://img.shields.io/badge/version-1.1.8-blue.svg?cacheSeconds=2592000)
+![Version](https://img.shields.io/badge/version-1.2.0-blue.svg?cacheSeconds=2592000)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/ShotaroMatsuya/premier-league-fav-toggler/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ShotaroMatsuya/premier-league-fav-toggler/tree/master) [![Known Vulnerabilities](https://snyk.io/test/github/ShotaroMatsuya/premier-league-fav-toggler/badge.svg)](https://snyk.io/test/github/ShotaroMatsuya/premier-league-fav-toggler)  [![premier-league-fav-toggler](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/detailed/khdjk9&style=plastic&logo=cypress)](https://cloud.cypress.io/projects/khdjk9/runs) [![renovate-app badge][renovate-badge]][renovate-app]
 
 ![](./badges/badge-branches.svg) ![](./badges/badge-functions.svg) ![](./badges/badge-lines.svg) ![](./badges/badge-statements.svg)
