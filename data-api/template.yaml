@@ -1,6 +1,9 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Parameters:
+  ApiKey:
+    Type: AWS::SSM::Parameter::Value<String>
+    Default: 'premier-data-api-token'
   Env:
     Description: Enter environment.dev, stg, or prod.
     Type: String
@@ -14,7 +17,7 @@ Globals:
     Timeout: 3
     Environment:
       Variables:
-        X_AUTO_TOKEN: 'e33f64183747429f9f5c530192278530'
+        X_AUTO_TOKEN: !Ref ApiKey
         API_BASE_URL: 'https://api.football-data.org/v4/'
   Api:
     # CORS有効化
