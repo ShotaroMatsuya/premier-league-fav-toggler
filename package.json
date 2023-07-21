@@ -1,11 +1,12 @@
 {
-  "name": "react-hooks-update",
+  "name": "premier-league-fav-toggler",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "axios": "^0.27.2",
     "dotenv-webpack": "^6.0.0",
     "firebase": "^9.18.0",
+    "jest-coverage-badges": "^1.1.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
@@ -22,7 +23,9 @@
     "lint": "eslint 'src/**/*.js*'",
     "lint-fix": "eslint --cache --fix src/ && prettier --write src/",
     "prettier:check": "prettier --check 'src/**/*.{js,jsx,json}'",
-    "prettier:write": "prettier --write 'src/**/*.{js,jsx,json}'"
+    "prettier:write": "prettier --write 'src/**/*.{js,jsx,json}'",
+    "test:coverage": "npm test -- --coverage",
+    "test:badges": "npm run test:coverage  && jest-coverage-badges --output './badges'"
   },
   "eslintConfig": {
     "extends": [
@@ -67,5 +70,12 @@
     "msw": "^1.1.1",
     "playwright-webkit": "^1.32.2",
     "prettier": "^2.8.8"
+  },
+  "jest": {
+    "coverageReporters": [
+      "json-summary",
+      "text",
+      "lcov"
+    ]
   }
 }
