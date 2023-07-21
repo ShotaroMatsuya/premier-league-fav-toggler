@@ -4,6 +4,7 @@ import { applyMiddleware, combineReducers, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import scheduleReducer from '../../store/reducers/schedule';
 import SchedulePage from '../Schedule';
+import MockDate from 'mockdate';
 
 const rootReducer = combineReducers({
   schedule: scheduleReducer
@@ -19,7 +20,7 @@ test('render Schedule Table of PL', async () => {
 
   await waitFor(async () => {
     const tableRows = await screen.findAllByRole('row');
-    expect(tableRows).toHaveLength(13);
+    expect(tableRows).toHaveLength(14);
   });
 });
 
