@@ -31,8 +31,8 @@ services:
     command: npx cypress run
     working_dir: /app
     network_mode: host
-    # environment:
-    #   - NODE_ENV=development
+    environment:
+      - NODE_ENV=development
     entrypoint: ['./node_modules/.bin/cypress']
     volumes:
       - node_modules:/app/node_modules:delegated
