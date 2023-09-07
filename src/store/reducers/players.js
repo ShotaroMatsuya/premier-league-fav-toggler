@@ -4,148 +4,148 @@ import { TOGGLE_FAV } from '../actions/players';
 const initialState = {
   players: [
     {
-      id: '1100',
-      name: 'Erling Haaland',
-      nation: 'Norway',
-      age: '22 years old',
+      id: '129033',
+      name: 'Josko Gvardiol',
+      nation: 'Croatia',
+      age: '21 years old',
       club: 'Manchester City',
       height_weight: '194/88',
-      position: 'Forward',
+      position: 'DF',
       imageUrl:
-        'https://resources.premierleague.com/premierleague/photos/players/250x250/p223094.png',
+        'https://resources.premierleague.com/premierleague/photos/players/250x250/p477424.png',
       isFavorite: false
     },
     {
-      id: '51617',
-      name: 'Darwin Núñez',
-      nation: 'Uruguay',
-      age: '23 years old',
-      club: 'Liverpool',
-      height_weight: '187/81',
-      position: 'Forward',
-      imageUrl:
-        'https://resources.premierleague.com/premierleague/photos/players/250x250/p447203.png',
-      isFavorite: false
-    },
-    {
-      id: '882',
-      name: 'David de Gea',
-      nation: 'Spain',
-      age: '31 years old',
-      club: 'Manchester United',
-      height_weight: '192/76',
-      position: 'Goalkeeper',
-      imageUrl:
-        'https://resources.premierleague.com/premierleague/photos/players/250x250/p51940.png',
-      isFavorite: false
-    },
-    {
-      id: '30435',
-      name: 'Dejan Kulusevski',
-      nation: 'Sweden',
-      age: '22 years old',
-      club: 'Tottenham Hotspur',
-      height_weight: '186/80',
-      position: 'Midfielder',
-      imageUrl:
-        'https://resources.premierleague.com/premierleague/photos/players/250x250/p445044.png',
-      isFavorite: false
-    },
-    {
-      id: '47380',
-      name: 'Marc Cucurella',
-      nation: 'Spain',
+      id: '6716',
+      name: 'Alexis Mac Allister',
+      nation: 'Argentina',
       age: '24 years old',
-      club: 'Chelsea FC',
-      height_weight: '172/66',
-      position: 'Defender',
+      club: 'Liverpool',
+      height_weight: '176/81',
+      position: 'MF',
       imageUrl:
-        'https://resources.premierleague.com/premierleague/photos/players/250x250/p179268.png',
+        'https://resources.premierleague.com/premierleague/photos/players/250x250/p243016.png',
       isFavorite: false
     },
     {
-      id: '2597',
-      name: 'Takehiro Tomiyasu',
-      nation: 'Japan',
+      id: '526',
+      name: 'André Onana',
+      nation: 'Cameroon',
+      age: '27 years old',
+      club: 'Manchester United',
+      height_weight: '190/76',
+      position: 'GK',
+      imageUrl:
+        'https://resources.premierleague.com/premierleague/photos/players/250x250/p202641.png',
+      isFavorite: false
+    },
+    {
+      id: '18784',
+      name: 'James Maddison',
+      nation: 'England',
+      age: '27 years old',
+      club: 'Tottenham Hotspur',
+      height_weight: '175/80',
+      position: 'MF',
+      imageUrl:
+        'https://resources.premierleague.com/premierleague/photos/players/250x250/p172780.png',
+      isFavorite: false
+    },
+    {
+      id: '63577',
+      name: 'Mykhailo Mudryk',
+      nation: 'Ukraine',
+      age: '22 years old',
+      club: 'Chelsea FC',
+      height_weight: '175/66',
+      position: 'MF',
+      imageUrl:
+        'https://resources.premierleague.com/premierleague/photos/players/250x250/p465920.png',
+      isFavorite: false
+    },
+    {
+      id: '2937',
+      name: 'Declan Rice',
+      nation: 'England',
       age: '23 years old',
       club: 'Arsenal FC',
-      height_weight: '188/70',
-      position: 'Defender',
+      height_weight: '185/70',
+      position: 'MF',
       imageUrl:
-        'https://resources.premierleague.com/premierleague/photos/players/250x250/p223723.png',
+        'https://resources.premierleague.com/premierleague/photos/players/250x250/p204480.png',
       isFavorite: false
     },
     {
-      id: '174',
-      name: 'Christian Eriksen',
-      nation: 'Denmark',
-      age: '30 years old',
+      id: '284324',
+      name: 'Alejandro Garnacho',
+      nation: 'Argentina',
+      age: '19 years old',
       club: 'Manchester United',
-      height_weight: '182/76',
-      position: 'Midfielder',
+      height_weight: '180/76',
+      position: 'FW',
       imageUrl:
-        'https://resources.premierleague.com/premierleague/photos/players/250x250/p80607.png',
+        'https://resources.premierleague.com/premierleague/photos/players/250x250/p493105.png',
       isFavorite: false
     },
     {
-      id: '567',
-      name: 'Rúben Dias',
-      nation: 'Portugal',
+      id: '2291',
+      name: 'Mateo Kovacic',
+      nation: 'Croatia',
       age: '25 years old',
       club: 'Manchester City',
-      height_weight: '186/76',
-      position: 'Defender',
+      height_weight: '177/76',
+      position: 'MF',
       imageUrl:
-        'https://resources.premierleague.com/premierleague/photos/players/250x250/p171314.png',
+        'https://resources.premierleague.com/premierleague/photos/players/250x250/p91651.png',
       isFavorite: false
     },
     {
-      id: '159',
-      name: 'Hugo Lloris',
-      nation: 'France',
-      age: '35 years old',
+      id: '30776',
+      name: 'Cristian Romero',
+      nation: 'Argentina',
+      age: '25 years old',
       club: 'Tottenham Hotspur',
       height_weight: '188/82',
-      position: 'Goalkeeper',
+      position: 'DF',
       imageUrl:
-        'https://resources.premierleague.com/premierleague/photos/players/250x250/p37915.png',
+        'https://resources.premierleague.com/premierleague/photos/players/250x250/p221632.png',
       isFavorite: false
     },
 
     {
-      id: '67972',
-      name: 'Conor Gallagher',
-      nation: 'England',
-      age: '22 years old',
-      club: 'Chelsea FC',
-      height_weight: '182/74',
-      position: 'Midfielder',
-      imageUrl:
-        'https://resources.premierleague.com/premierleague/photos/players/250x250/p232787.png',
-      isFavorite: false
-    },
-    {
-      id: '507',
-      name: 'Thiago',
+      id: '18959',
+      name: 'Robert Sánchez',
       nation: 'Spain',
-      age: '31 years old',
-      club: 'Liverpool',
-      height_weight: '174/70',
-      position: 'Midfielder',
+      age: '25 years old',
+      club: 'Chelsea FC',
+      height_weight: '197/74',
+      position: 'GK',
       imageUrl:
-        'https://resources.premierleague.com/premierleague/photos/players/250x250/p61558.png',
+        'https://resources.premierleague.com/premierleague/photos/players/250x250/p215059.png',
       isFavorite: false
     },
     {
-      id: '643',
-      name: 'Gabriel Jesus',
-      nation: 'Brazil',
-      age: '25 years old',
-      club: 'Arsenal FC',
-      height_weight: '175/73',
-      position: 'Forward',
+      id: '1096',
+      name: 'Dominik Szoboszlai',
+      nation: 'Hungary',
+      age: '22 years old',
+      club: 'Liverpool',
+      height_weight: '186/70',
+      position: 'MF',
       imageUrl:
-        'https://resources.premierleague.com/premierleague/photos/players/250x250/p205651.png',
+        'https://resources.premierleague.com/premierleague/photos/players/250x250/p424876.png',
+      isFavorite: false
+    },
+    {
+      id: '1946',
+      name: 'Leandro Trossard',
+      nation: 'Belgium',
+      age: '28 years old',
+      club: 'Arsenal FC',
+      height_weight: '172/73',
+      position: 'FW',
+      imageUrl:
+        'https://resources.premierleague.com/premierleague/photos/players/250x250/p116216.png',
       isFavorite: false
     }
   ]
