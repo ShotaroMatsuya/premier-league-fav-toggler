@@ -28,6 +28,13 @@ npm run start
 npm run test
 ```
 
+## Renew snapshots for visual regression test
+
+```sh
+docker compose run cypress run --env type=base
+```
+
+
 ## Author
 
 👤 **ShotaroMatsuya**
