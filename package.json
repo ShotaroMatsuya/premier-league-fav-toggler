@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.27.2",
-    "dotenv-webpack": "^8.0.0",
+    "dotenv-webpack": "^6.0.0",
     "firebase": "^10.2.0",
     "jest-coverage-badges": "^1.1.2",
     "react": "^16.8.6",
