@@ -9,7 +9,7 @@ executors:
   default:
     working_directory: ~/repo
     docker:
-      - image: shotaromatsuya/premier-node:16
+      - image: shotaromatsuya/premier-node:20
   slack-executor:
     docker:
       - image: 'cibuilds/base:latest'
