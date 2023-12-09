@@ -14,7 +14,7 @@ services:
       - ./:/app
       - node_modules:/app/node_modules:delegated
   npm:
-    image: shotaromatsuya/premier-node:16
+    image: shotaromatsuya/premier-node:20
     working_dir: /app
     entrypoint: ['npm']
     user: 'node:node'
