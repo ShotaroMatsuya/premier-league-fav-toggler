@@ -80,13 +80,13 @@ test('should display correct attributes for field players', async () => {
   await waitFor(async () => {
     const totalRate = screen.getByText('Rating');
     expect(totalRate).toBeInTheDocument();
-    const appearanceCount = screen.getByText('出場試合');
+    const appearanceCount = screen.getByText('Appearances');
     expect(appearanceCount).toBeInTheDocument();
-    const totalTime = screen.getByText('出場時間');
+    const totalTime = screen.getByText('Minutes');
     expect(totalTime).toBeInTheDocument();
-    const goalCount = screen.getByText('ゴール数');
+    const goalCount = screen.getByText('Goals');
     expect(goalCount).toBeInTheDocument();
-    const assistCount = screen.getByText('アシスト');
+    const assistCount = screen.getByText('Assists');
     expect(assistCount).toBeInTheDocument();
   });
 });
@@ -108,13 +108,13 @@ test('should display correct attributes for goal keepers', async () => {
   await waitFor(async () => {
     const totalRate = screen.getByText('Rating');
     expect(totalRate).toBeInTheDocument();
-    const appearanceCount = screen.getByText('出場試合');
+    const appearanceCount = screen.getByText('Appearances');
     expect(appearanceCount).toBeInTheDocument();
-    const totalTime = screen.getByText('出場時間');
+    const totalTime = screen.getByText('Minutes');
     expect(totalTime).toBeInTheDocument();
-    const goalCount = screen.getByText('セーブ数');
+    const goalCount = screen.getByText('Saves');
     expect(goalCount).toBeInTheDocument();
-    const assistCount = screen.getByText('失点数');
+    const assistCount = screen.getByText('Conceded');
     expect(assistCount).toBeInTheDocument();
   });
 });
@@ -200,12 +200,12 @@ test('should display the detailed attacking stats table when click the button', 
     </Provider>
   );
   const attackStatsBtn = screen.getByRole('button', {
-    name: '攻撃データ'
+    name: 'Attacking Stats'
   });
   await waitFor(async () => {
     await userEvent.click(attackStatsBtn);
     expect(
-      screen.getByRole('heading', { name: '攻撃stats' })
+      screen.getByRole('heading', { name: 'Attacking stats' })
     ).toBeInTheDocument();
   });
 });
@@ -225,12 +225,12 @@ test('should display the detailed defensive stats table when clicking', async ()
     </Provider>
   );
   const defenceStatsBtn = screen.getByRole('button', {
-    name: '守備データ'
+    name: 'Defending Stats'
   });
   await waitFor(async () => {
     await userEvent.click(defenceStatsBtn);
     expect(
-      screen.getByRole('heading', { name: '守備stats' })
+      screen.getByRole('heading', { name: 'Defending stats' })
     ).toBeInTheDocument();
   });
 });
@@ -254,7 +254,7 @@ test('should show the modal when api call exceed the limitation', async () => {
     const modal = await screen.getByTestId('error-modal');
     expect(modal).toBeInTheDocument();
     expect(modal).toHaveTextContent(
-      '一日のリクエストの上限(100)に達しました。翌日お試しください。'
+      'You have reached the daily request limit (100). Please try the next day.Rankings and schedule information are still available.'
     );
   });
 });

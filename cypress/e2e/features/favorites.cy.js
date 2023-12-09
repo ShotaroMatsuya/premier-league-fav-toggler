@@ -65,7 +65,7 @@ describe('通信失敗時', () => {
     cy.get('.main-header > nav > ul > :nth-child(2) > a').click();
     cy.get('.Modal').should(
       'contain',
-      '一日のリクエストの上限(100)に達しました。'
+      'You have reached the daily request limit (100). Please try the next day.'
     );
   });
 });

@@ -46,7 +46,7 @@ const FavoriteItem = (props) => {
       dispatchHttp({ type: 'SEND' });
       axios
         .get(
-          `https://api-football-beta.p.rapidapi.com/players?id=${id}&season=2023`,
+          `https://api-football-beta.p.rapidapi.com/players?id=${id}&season=2023&league=39`,
           {
             headers
           }
@@ -69,7 +69,7 @@ const FavoriteItem = (props) => {
   if (statsState) {
     attackResults = (
       <React.Fragment>
-        <h1>攻撃stats</h1>
+        <h1>Attacking stats</h1>
         <table className="stats attack" style={{ margin: '0 auto' }}>
           <thead>
             <tr align="center">
@@ -101,7 +101,7 @@ const FavoriteItem = (props) => {
     );
     defenceResults = (
       <React.Fragment>
-        <h1>守備stats</h1>
+        <h1>Defending stats</h1>
         <table className="stats defence" style={{ margin: '0 auto' }}>
           <thead>
             <tr align="center">
@@ -141,10 +141,10 @@ const FavoriteItem = (props) => {
   }, []);
   let statsColumn3 = '';
   let statsColumn4 = '';
-  if (statsState && props.position !== 'Goalkeeper') {
+  if (statsState && props.position !== 'GK') {
     statsColumn3 = statsState.goals.total;
     statsColumn4 = statsState.goals.assists;
-  } else if (statsState && props.position === 'Goalkeeper') {
+  } else if (statsState && props.position === 'GK') {
     statsColumn3 = statsState.goals.conceded;
     statsColumn4 = statsState.goals.saves;
   }
@@ -184,13 +184,14 @@ const FavoriteItem = (props) => {
             }}
             data-testid="error-modal"
           >
-            一日のリクエストの上限(100)に達しました。翌日お試しください。
+            You have reached the daily request limit (100). Please try the next
+            day.
             <br />
-            なお、ランキングと日程情報はご利用いただけます。
+            Rankings and schedule information are still available.
           </p>
 
           <a href="/">
-            <button>Topに戻る</button>
+            <button>Return to Top</button>
           </a>
         </Modal>
       )}
@@ -224,7 +225,7 @@ const FavoriteItem = (props) => {
               <div className="topStatList">
                 <div className="topStat">
                   <span className="stat">
-                    出場試合
+                    Appearances
                     <span
                       className="allStatContainer"
                       data-testid="appearance-count"
@@ -239,7 +240,7 @@ const FavoriteItem = (props) => {
                 </div>
                 <div className="topStat">
                   <span className="stat">
-                    出場時間
+                    Minutes
                     <span
                       className="allStatContainer"
                       data-testid="appearance-time"
@@ -250,9 +251,7 @@ const FavoriteItem = (props) => {
                 </div>
                 <div className="topStat">
                   <span className="stat">
-                    {statsState && props.position !== 'Goalkeeper'
-                      ? 'ゴール数'
-                      : 'セーブ数'}
+                    {statsState && props.position !== 'GK' ? 'Goals' : 'Saves'}
 
                     <span className="allStatContainer">
                       {statsState ? statsColumn3 || 0 : <Spinner />}
@@ -261,9 +260,9 @@ const FavoriteItem = (props) => {
                 </div>
                 <div className="topStat">
                   <span className="stat">
-                    {statsState && props.position !== 'Goalkeeper'
-                      ? 'アシスト'
-                      : '失点数'}
+                    {statsState && props.position !== 'GK'
+                      ? 'Assists'
+                      : 'Conceded'}
                     <span className="allStatContainer">
                       {statsState ? statsColumn4 || 0 : <Spinner />}
                     </span>
@@ -271,13 +270,13 @@ const FavoriteItem = (props) => {
                 </div>
               </div>
               <button onClick={attackStatsHandler} style={{ margin: '1.2rem' }}>
-                攻撃データ
+                Attacking Stats
               </button>
               <button
                 onClick={defenseStatsHandler}
                 style={{ margin: '1.2rem' }}
               >
-                守備データ
+                Defending Stats
               </button>
             </div>
           </div>
