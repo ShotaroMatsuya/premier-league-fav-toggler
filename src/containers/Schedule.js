@@ -34,7 +34,6 @@ const Schedule = (props) => {
           data-testid="error-modal"
         >
           Request failed. Please try again later.
-
         </p>
       </Modal>
     );

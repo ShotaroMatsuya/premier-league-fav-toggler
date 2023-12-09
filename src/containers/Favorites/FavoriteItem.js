@@ -184,7 +184,8 @@ const FavoriteItem = (props) => {
             }}
             data-testid="error-modal"
           >
-            You have reached the daily request limit (100). Please try the next day.
+            You have reached the daily request limit (100). Please try the next
+            day.
             <br />
             Rankings and schedule information are still available.
           </p>
@@ -250,9 +251,7 @@ const FavoriteItem = (props) => {
                 </div>
                 <div className="topStat">
                   <span className="stat">
-                    {statsState && props.position !== 'GK'
-                      ? 'Goals'
-                      : 'Saves'}
+                    {statsState && props.position !== 'GK' ? 'Goals' : 'Saves'}
 
                     <span className="allStatContainer">
                       {statsState ? statsColumn3 || 0 : <Spinner />}
