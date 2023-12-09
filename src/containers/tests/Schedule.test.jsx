@@ -44,7 +44,7 @@ test("should display modal if matches don't exist in a week", async () => {
   await waitFor(async () => {
     const modal = screen.getByTestId('notfound-modal');
     expect(modal).toBeInTheDocument();
-    expect(modal).toHaveTextContent('1週間以内に試合がありません。');
+    expect(modal).toHaveTextContent('There are no games within a week.');
   });
 });
 
@@ -63,6 +63,6 @@ test('should display modal if api call return error', async () => {
   await waitFor(async () => {
     const modal = screen.getByTestId('error-modal');
     expect(modal).toBeInTheDocument();
-    expect(modal).toHaveTextContent('リクエストに失敗しました');
+    expect(modal).toHaveTextContent('Request failed. Please try again later.');
   });
 });

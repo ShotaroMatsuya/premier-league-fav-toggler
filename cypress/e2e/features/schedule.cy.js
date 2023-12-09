@@ -35,7 +35,7 @@ describe('エラーモーダルの表示', () => {
     cy.visit('/schedule');
     // モーダル表示
     cy.get('.Modal').should('be.visible');
-    cy.get('.Modal').should('contain', 'リクエストに失敗しました');
+    cy.get('.Modal').should('contain', 'Request failed. Please try again later.');
   });
   it('apiコールに成功したらモーダルでない', () => {
     cy.clock(new Date(2022, 8, 27).getTime(), ['Date']);

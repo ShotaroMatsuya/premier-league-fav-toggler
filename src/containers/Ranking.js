@@ -26,9 +26,7 @@ const Ranking = (props) => {
           }}
           data-testid="error-modal"
         >
-          リクエストに失敗しました。時間をおいて再度お試しください。
-          <br />
-          (APIが無料版なので不安定です🙇)
+          Request failed. Please try again later.
         </p>
       </Modal>
     );
@@ -63,12 +61,12 @@ const Ranking = (props) => {
       <table className="ranking">
         <thead>
           <tr align="center">
-            <th width="10%">順位</th>
-            <th width="40%">クラブ</th>
-            <th width="10%">試合</th>
-            <th width="10%">勝</th>
-            <th width="10%">分</th>
-            <th width="10%">負</th>
+            <th width="10%">#</th>
+            <th width="40%">TEAM</th>
+            <th width="10%">P</th>
+            <th width="10%">W</th>
+            <th width="10%">D</th>
+            <th width="10%">L</th>
             <th width="10%">Pts</th>
           </tr>
         </thead>

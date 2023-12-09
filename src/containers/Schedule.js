@@ -13,7 +13,7 @@ const Schedule = (props) => {
   const scheduleTable = [];
   let game_list = [];
   let games_num;
-  const youbi = ['日', '月', '火', '水', '木', '金', '土'];
+  const youbi = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
   let date, jdate;
   let jtime = '';
 
@@ -33,9 +33,8 @@ const Schedule = (props) => {
           }}
           data-testid="error-modal"
         >
-          リクエストに失敗しました。時間をおいて再度お試しください。
-          <br />
-          (APIが無料版なので不安定です🙇)
+          Request failed. Please try again later.
+
         </p>
       </Modal>
     );
@@ -57,7 +56,7 @@ const Schedule = (props) => {
             }}
             data-testid="notfound-modal"
           >
-            1週間以内に試合がありません。
+            There are no games within a week.
           </p>
         </Modal>
       );
@@ -111,13 +110,13 @@ const Schedule = (props) => {
       <table className="schedule">
         <thead>
           <tr align="center">
-            <th width="40%">ホーム</th>
+            <th width="40%">HOME</th>
             <th width="20%">
-              日時
+              DAY
               <br />
-              (日本時間)
+              (JST)
             </th>
-            <th width="40%">アウェイ</th>
+            <th width="40%">AWAY</th>
           </tr>
         </thead>
         <tbody>
