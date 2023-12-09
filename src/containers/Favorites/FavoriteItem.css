@@ -34,7 +34,12 @@
   border-top: 1px solid #e8e8e8;
   border-bottom: 1px solid #e8e8e8;
   border-right: 1px solid #e8e8e8;
-  font-family: PremierSans-Bold, Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-family:
+    PremierSans-Bold,
+    Arial,
+    Helvetica Neue,
+    Helvetica,
+    sans-serif;
   font-weight: 400;
   border-radius: 0 0 3px 3px;
   position: relative;
